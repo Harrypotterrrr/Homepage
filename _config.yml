@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Haolin Jia's homepage
 subtitle:
-description:
+description: Undergraduate in Computer Science.🎨Interested in classical algorithms and everything related to artificial intelligence.☀️
 keywords:
-author: John Doe
+author: Haolin Jia
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://Harrypotterrrr.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
