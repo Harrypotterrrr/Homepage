@@ -8,13 +8,13 @@ subtitle:
 description: Undergraduate in Computer Science.🎨Interested in classical algorithms and everything related to artificial intelligence.☀️
 keywords:
 author: Haolin Jia
-language:
+language: English, Chinese
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://Harrypotterrrr.github.io
-root: /public/
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
