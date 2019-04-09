@@ -20,9 +20,9 @@ comments: false
 
 # Education
 
-- 2016~2020 B.Eng in Computer science, Tongji University, Shanghai, China
+- 2016~2020 <b>B.Eng</b> in Computer science, Tongji University, Shanghai, China
     GPA: 4.67/5  93.4/100
-- 2013~2016	Graduate of High school, The Experimental High School Attached to Beijing Normal
+- 2013~2016 <b>Graduate</b> of High school, The Experimental High School Attached to Beijing Normal
     University, Beijing, China
 
 
@@ -49,6 +49,12 @@ tr, td {
     font-weight: bold;
 }
 
+.expertise {
+    width: 20%;
+    vertical-align: top;
+    font-weight: bold;
+}
+
 }
 
 </style>
@@ -57,7 +63,7 @@ tr, td {
     <tbody>
         <tr>
             <td class="duration" rowspan="4">Feb 2019 ~ Mar 2019</td>
-            <td><b>Team Member</b> of SmartTab project</td>
+            <td><b>Team Member</b> of <a href="https://github.com/My-code-works/SmartTab">SmartTab project</a></td>
         </tr>
         <tr>
             <td>Google AI ML Winter Camp</td>
@@ -81,10 +87,10 @@ tr, td {
     <tbody>
         <tr>
             <td class="duration" rowspan="4">Nov 2018 ~ Present</td>
-            <td><b>Researcher</b>, supervised by Prof. Nan Cao</td>
+            <td><b>Researcher</b>, supervised by <a href="http://nancao.org/">Prof. Nan Cao</a></td>
         </tr>
         <tr>
-            <td>Intelligent Big Data Visualization Lab</td>
+            <td><a href="https://idvxlab.com/">Intelligent Big Data Visualization Lab</a></td>
         </tr>
         <tr>
             <td>Tongji University, Shanghai, China</td>
@@ -95,6 +101,7 @@ tr, td {
                     <li>Training the model to evaluate the quality of automatically generated poster.</li>
                     <li>Utilizing the new-style GAN to solve the tricky problem of overlap and arrangement of decorations.</li>
                     <li>Dealing with the few-shot problem in GAN training.</li>
+                </ul>
             </td>
     </tbody>
 </table>
@@ -122,64 +129,60 @@ tr, td {
 </table>
 
 
-
 {% endraw %}    
 
 
 # Research Interests
 
-Skyscraping passion for Deep learning, Machine learning, Computer vision, Big data visualization.
+&emsp;&emsp;Skyscraping passion for Deep learning, Machine learning, Computer vision, Big data visualization.
 
 
 # Current Effort
 
-1. Auto poster generator
+1. **Auto poster generator**
 
-It aims to generate a poster by using a sequence model composed of generator model of LSTM and independent discriminator of naive CNN to extract feature and evaluate.
+&emsp;&emsp;It aims to generate a poster by using a sequence model composed of generator model of LSTM and independent discriminator of naive CNN to extract feature and evaluate.
 
-To train the GAN model with a few samples and decoration arrangement is the current problem.
+&emsp;&emsp;To train the GAN model with a few samples and decoration arrangement is the current problem.
 
-2. Gray image colorization
+2. **Gray image colorization**
 
-With innovative framework, this project is my national science and technology innovation project. We are proposing a new model that may show the best performance across different life scenes.
+&emsp;&emsp;With innovative framework, this project is my national science and technology innovation project. We are proposing a new model that may show the best performance across different life scenes.
 
 
 # Expertise & Skills
 
-- Programming: 
-    * Expert at C++/C and Python
-    * Frequent user of: Shell, Javascript, HTML, CSS and LaTeX
-- Operating system: Linux, Git and Windows
-- DL framework: Tensorflow, Pytorch, keras
-- Languages: Mandarin Chinese, English
+{% raw %}
 
+<table>
+    <tbody>
+        <tr>
+            <td class="expertise" rowspan=2>Programming</td>
+            <td>Expert at C++/C and Python</td>
+        </tr>
+        <tr>
+            <td>Frequent user of Shell, Javascript, HTML, CSS and LaTeX</td>
+        </tr>
+        <tr>
+            <td class="expertise">Operating system
+            <td>Linux, Git and Windows</td>
+        </tr>
+        <tr>
+            <td class="expertise">DL framework</td>
+            <td>Tensorflow, Pytorch, keras</td>
+        </tr>
+        <tr>
+            <td class="expertise">Languages</td>
+            <td>Mandarin Chinese, English</td>
+        </tr>
+</tbody>
+</table>
+
+{% endraw %}
 
 # Part of Awards & Honors
 
 {% raw %}
-<style type="text/css">
-
-table {
-    border: 0px;
-    width: 100%;
-}
-
-tr, td {
-    border: 0px;
-    text-align: left;
-    padding: 2px 10px;
-    background-color: white;
-}
-
-.duration {
-    width: 15%;
-    vertical-align: top;
-    font-weight: bold;
-}
-
-}
-
-</style>
 
 <table>
     <tbody>
