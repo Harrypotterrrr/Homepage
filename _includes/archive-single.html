@@ -46,7 +46,7 @@
 		<p class="page__date">
 			<strong>
 				<i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
-				{{ site.data.ui-text[site.locale].date_label | default: "Modified:" }}
+				{{ site.data.ui-text[site.locale].modified_label | default: "Modified:" }}
 			</strong> 
 			<time datetime="{{ post.modified | default: "1900-01-01" | date_to_xmlschema }}"> 
 				{{ post.modified | default: "1900-01-01" | date: "%B %d, %Y" }}
