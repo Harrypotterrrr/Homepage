@@ -1,7 +1,7 @@
 ---
 title: 'Generative Adversarial Text to Image Synthesis'
 date: 2019-05-10
-modified: 2019-05-17
+modified: 2019-05-19
 permalink: /posts/2019/05/text_to_image_1/
 tags:
   - paper
@@ -20,7 +20,7 @@ For text to image, there are many plausible value to one pixel that correctly il
 
 For image to text, it is much practical to decompose the sequence according to the chain rule to generate captions. **TOREAD**
 
-## Method
+## Preliminaries
 
 ### GAN
 
@@ -36,9 +36,11 @@ The purpose of this structure is to obtain $\varphi(t)$ which can encode text de
 
 Denote the classifier as followed, where $\phi(v)$ is the image encoder, and $\varphi(t)$ is the text encoder. Inner-product of vectors can be interpreted to some degree as the distance or similarity of two vectors.
 
+
 $$
-\begin{array}{r} f_{v}(v) &=\underset{y \in \mathcal{Y}}{\arg \max } \mathbb{E}_{t \sim \mathcal{T}(y)}\left[\phi(v)^{T} \varphi(t)\right) ] \\ f_{t}(t) &=\underset{y \in \mathcal{Y}}{\arg \max } \mathbb{E}_{v \sim \mathcal{V}(y)}\left[\phi(v)^{T} \varphi(t)\right) ] \end{array}
+\begin{array}{l} f_{v}(v) &=\underset{y \in \mathcal{Y}}{\arg \max } \mathbb{E}_{t \sim \mathcal{T}(y)}\left[\phi(v)^{T} \varphi(t)\right) ] \\ f_{t}(t) &=\underset{y \in \mathcal{Y}}{\arg \max } \mathbb{E}_{v \sim \mathcal{V}(y)}\left[\phi(v)^{T} \varphi(t)\right) ] \end{array}
 $$
+
 
 Then optimize the following structured loss:
 
@@ -59,7 +61,7 @@ Two sources of error should be considered: unrealistic (bad generation) images, 
 For this reason, apart from origin losses: real image with right text and fake image with false text, additional loss: real image with false text, is added to train the discriminator to have the ability of discriminate whether the generated image match the text or not, instead of only to measure the quality of output image.
 
 $$
-\begin{array}{l}{s_{r} \leftarrow D(x, h)\{\text { real image, right text }\}} \\ {s_{w} \leftarrow D(x, \hat{h})\{\text { real image, wrong text }\}} \\ {s_{f} \leftarrow D(\hat{x}, h)\{\text { fake image, right text }\}} \\ {\mathcal{L}_{D} \leftarrow \log \left(s_{r}\right)+\left(\log \left(1-s_{w}\right)+\log \left(1-s_{f}\right)\right) / 2}\end{array}
+\begin{array}{l} {s_{r} \leftarrow D(x, h)\{\text { real image, right text }\}} \\ {s_{w} \leftarrow D(x, \hat{h})\{\text { real image, wrong text }\}} \\ {s_{f} \leftarrow D(\hat{x}, h)\{\text { fake image, right text }\}} \\ {\mathcal{L}_{D} \leftarrow \log \left(s_{r}\right)+\left(\log \left(1-s_{w}\right)+\log \left(1-s_{f}\right)\right) / 2}\end{array}
 $$
 
 ### GAN_INT
@@ -93,4 +95,6 @@ $$
 
 > It is a bit difficult to understand the implication this model. To make sense of this, we can interpret this inverted model $S$ as to measure the ability of $G$ to output a generative image with both decent content and style in convergence case where $\mathcal{L}_{\text {style}}$ comes close to 0.
 
-For evaluation, `cosine similarity` and `ROC` is used. Images with similar and dissimilar content and style is selected and constructed as a pair, and if GAN has disentangled ability, the similarity between noises inverted from images of the same style (e.g. similar pose) should be higher than that of different styles (e.g. different pose).
+![ROC_curve](/assets/images/2019/05/text_to_image_1/ROC_curve.png)
+
+For evaluation, `cosine similarity` and `ROC` is used as showed in the above figure. Images with similar and dissimilar content and style is selected and constructed as a pair, and if GAN has disentangled ability, the similarity between noises inverted from images of the same style (e.g. similar pose) should be higher than that of different styles (e.g. different pose).
