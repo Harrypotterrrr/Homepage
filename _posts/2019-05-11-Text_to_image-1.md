@@ -36,11 +36,12 @@ The purpose of this structure is to obtain $\varphi(t)$ which can encode text de
 
 Denote the classifier as followed, where $\phi(v)$ is the image encoder, and $\varphi(t)$ is the text encoder. Inner-product of vectors can be interpreted to some degree as the distance or similarity of two vectors.
 
-
 $$
-\begin{array}{l} f_{v}(v) &=\underset{y \in \mathcal{Y}}{\arg \max } \mathbb{E}_{t \sim \mathcal{T}(y)}\left[\phi(v)^{T} \varphi(t)\right) ] \\ f_{t}(t) &=\underset{y \in \mathcal{Y}}{\arg \max } \mathbb{E}_{v \sim \mathcal{V}(y)}\left[\phi(v)^{T} \varphi(t)\right) ] \end{array}
+f_{v}(v) =\underset{y \in \mathcal{Y}}{\arg \max } \mathbb{E}_{t \sim \mathcal{T}(y)}\left[\phi(v)^{T} \varphi(t)\right]
 $$
 
+$$ f_{t}(t) =\underset{y \in \mathcal{Y}}{\arg \max } \mathbb{E}_{v \sim \mathcal{V}(y)}\left[\phi(v)^{T} \varphi(t)\right]
+$$
 
 Then optimize the following structured loss:
 
@@ -53,6 +54,8 @@ The intuition here is that a text encoding should have a higher compatibility sc
 ### Network structure
 
 There is no particular to the total architecture of network, except for the conditions which is encoded from the text description and concatenated to noise afterwards. Two different full-connected layers are implemented to encode text description both in upsampling and downsampling model. 
+
+![network_arch](/assets/images/2019/05/text_to_image_1/network_arch.png)
 
 ### GAN-CLS
 

@@ -16,7 +16,7 @@ The note of [*Learning where and what to draw*](https://arxiv.org/pdf/1610.02454
 
 ## Overview
 
-Precious method so far only used conditioning variable such as a class label or non-localized caption, and didn't allow for controlling the location information of objects.
+Previous method so far only used conditioning variable such as a class label or non-localized caption, and didn't allow for controlling the location information of objects.
 
 This model learns to perform content controllable and location controllable image synthesis, that is what and where. There are two ways to encode spatial constraints, one is incorporating spatial masking and cropping modules into a text-conditional GAN with spatial transformers, another is locating part of the object by a set of normalized coordinates (x, y) with multiplicative gating mechanism.
 
@@ -28,14 +28,14 @@ Spatial Transformer Networks (STN) is an effective visual attention mechanism
 
 ## Network structure
 
-GAN and Joint embedding structure used in this model is articulated in the note of [Generative Adversarial Text to Image Synthesis](/posts/2019/05/text_to_image_1/)
+**GAN** and **Joint embedding structure** used in this model is articulated in the note of [Generative Adversarial Text to Image Synthesis](/posts/2019/05/text_to_image_1/)
 
 
 ### Bounding-box conditional model
 
 ![bounding-box model](/assets/images/2019/05/text_to_image_2/bounding-box-model.png)
 
-### Keypoint condiional model
+### Keypoint conditional model
 
 ![keypoint model](/assets/images/2019/05/text_to_image_2/keypoint-model.png)
 
@@ -45,7 +45,7 @@ The purpose is to have acceess to all of the conditional distributions of keypoi
 
 The keypoint generation GAN is proposed to build datasets with full keypoints using gating mechanism given only a few of visible variable. 
 
-The discriminator ($D$) of the GAN is simple which only distinguish real keypoints and text $\left(\mathbf{k}_{r e a l}, \mathbf{t}_{r e a l}\right)$  from synthetic keypoints.
+The discriminator ($D$) of the GAN is simple which only distinguish real keypoints and text $\left(\mathbf{k}\_{real}, \mathbf{t}\_{real}\right)$  from synthetic keypoints.
 
 The generator ($G$) is relatively complicated and formulated as follows:
 
@@ -53,7 +53,7 @@ $$
 G_{k}(z, \mathbf{t}, \mathbf{k}, \mathbf{s}) :=\mathbf{s} \odot \mathbf{k}+(1-\mathbf{s}) \odot f(z, \mathbf{t}, \mathbf{k})
 $$
 
-where $k_{i} :=\left\{x_{i}, y_{i}, v_{i}\right\}$, $i = 1,...,K$ and $x$ and $y$ indicate thee row and column position, $v$ is a bit set to 1 if the part is absolutely visible and 0 otherwise. Note that $\mathbf{k} \in[0,1]^{K \times 3}$ encode the keypoints into a matrix. Switch units $\mathbf{s} \in\{0,1\}^{K}$ is to specified previously by for example user, which set the $i$-th entry of $K$ to 1 if the corresponding $i$-th part is 1 and 0 otherwise. $\odot$ denotes pointwise multiplication and $f$ is a 3-layer fully-connected network to transform concatenated $z$, $t$ and flattened $k$ of shape $\mathbb{R}^{Z+T+3 K}$ to the shape of $\mathbb{R}^{3 K}$ 
+where $k_{i} := \left\\{ x_{i}, y_{i}, v_{i} \right\\}$, $i = 1,...,K$ and $x$ and $y$ indicate thee rows and columns position, $v$ is a bit set to 1 if the part is absolutely visible and 0 otherwise. Note that $\mathbf{k} \in[0,1]^{K \times 3}$ encode the keypoints into a matrix. Switch units $\mathbf{s} \in\{0,1\}^{K}$ is to specified previously by for example user, which set the $i$-th entry of $K$ to 1 if the corresponding $i$-th part is 1 and 0 otherwise. $\odot$ denotes pointwise multiplication and $f$ is a 3-layer fully-connected network to transform concatenated $z$, $t$ and flattened $k$ of shape $\mathbb{R}^{Z+T+3 K}$ to the shape of $\mathbb{R}^{3 K}$ 
 
 As stated above, parameters of $f$ is trainable. **TOREAD**
 
