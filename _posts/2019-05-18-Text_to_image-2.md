@@ -10,7 +10,7 @@ tags:
 excerpt_separator: <!--more-->
 ---
 
-The note of [*Learning where and what to draw*](https://arxiv.org/pdf/1610.02454)
+The note of [*Learning where and what to draw*](https://arxiv.org/abs/1610.02454)
 
 <!--more-->
 

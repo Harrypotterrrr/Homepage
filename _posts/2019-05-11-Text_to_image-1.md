@@ -10,7 +10,7 @@ tags:
 excerpt_separator: <!--more-->
 ---
 
-The note of [*Generative Adversarial Text to Image Synthesis*](https://arxiv.org/pdf/1605.05396)
+The note of [*Generative Adversarial Text to Image Synthesis*](https://arxiv.org/abs/1605.05396)
 
 <!--more-->
 
