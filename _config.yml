@@ -83,7 +83,8 @@ author:
   name             : "Haolin Jia"
   avatar           : "avatar.jfif"
   bio              : "Undergraduate in Computer Science. 🎨Interested in classical algorithms and techniques related to artificial intelligence.☀️"
-  location         : "Merced, CA, US"
+  # location         : "Merced, CA, US"
+  location         : "Shanghai, China"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "http://yourfullgooglescholarurl.com"
@@ -92,7 +93,7 @@ author:
   linkedin         : "haolin-jia-7b4b49173/"
   facebook         : "100012241788050"
   twitter          : "Harrypotterrrr7"
-  steam            : "76561198378260096/"
+  # steam            : "76561198378260096/"
   researchgate     : # example: "https://www.researchgate.net/profile/yourprofile"
   uri              : # "http://Harrypotterrrr.github.io"
   bitbucket        :
