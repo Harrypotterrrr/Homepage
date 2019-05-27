@@ -144,7 +144,7 @@ where $\alpha$ is a margin hyper-parameter.
 The loss function with reference values $\left(O_{t}, l_{t},\left\\{R_{t}^{k}\right\\}, F_{t}\right)$ is:
 
 $$
-\begin{aligned} L=&-w_{o} \sum_{t} \log p\left(o_{t}\right)-w_{l} \sum_{t} \log p\left(l_{t}\right) -\sum_{k} w_{k} \sum_{t} \log p\left(R_{t}^{k}\right) \\ &+w_{e} \sum_{t} L_{t r i p l e t}\left(Q_{t}, F_{t}\right) +w_{a}^{O} L_{a t t n}^{O}+w_{a}^{A} L_{a t t n}^{A} \end{aligned}
+\begin{aligned} L=&-w_{o} \sum_{t} \log p\left(o_{t}\right)-w_{l} \sum_{t} \log p\left(l_{t}\right) -\sum_{k} w_{k} \sum_{t} \log p\left(R_{t}^{k}\right) \\\ &+w_{e} \sum_{t} L_{t r i p l e t}\left(Q_{t}, F_{t}\right) +w_{a}^{O} L_{a t t n}^{O}+w_{a}^{A} L_{a t t n}^{A} \end{aligned}
 $$
 
 where $L_{a t t n}^{*}$ are regularization terms inspired by the doubly stochastic attention module propose in section 4.2.1 of [*Show, attend and tell: Neural image caption generation with visual attention*](https://arxiv.org/abs/1502.03044) and $w$ are hyper-parameters controlling the relative contribution of each loss.

@@ -3,9 +3,9 @@ title: 'Linux cookbook'
 date: 2019-02-16
 modified: 2019-05-15
 permalink: /posts/2019/02/Linux-cookbook/
-excerpt_separator: <!--more-->
 tags:
   - cookbook
+excerpt_separator: <!--more-->
 ---
 
 This cookbook is built for quick and easy search for commands and deployments of Linux, Pip, Conda, Jupyter, Remote pycharm, Apache
