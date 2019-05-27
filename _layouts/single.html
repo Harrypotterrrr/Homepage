@@ -68,7 +68,7 @@ layout: default
 				{% endif %}
             </section>
             
-            {% if page.toc %}
+            {% unless page.toc == false %}
             <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
                 <nav class="toc">
                     <header>
@@ -80,7 +80,7 @@ layout: default
                     {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" %}
                 </nav>
             </aside>
-            {% endif %}
+            {% endunless %}
 
 			<footer class="page__meta">
 				{% if site.data.ui-text[site.locale].meta_label %}
