@@ -29,7 +29,8 @@ layout: default
 		<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
 
 		<div class="page__inner-wrap">
-			{% unless page.header.overlay_color or page.header.overlay_image %}
+            
+            {% unless page.header.overlay_color or page.header.overlay_image %}
 			<header>
 				{% if page.title %}<h1 class="page__title" itemprop="headline">
 					{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
@@ -65,7 +66,21 @@ layout: default
 						class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a>
 				</div>
 				{% endif %}
-			</section>
+            </section>
+            
+            {% if page.toc %}
+            <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
+                <nav class="toc">
+                    <header>
+                        <h4 class="nav__title">
+                            <i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i>
+                            {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label }}
+                        </h4>
+                    </header>
+                    {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" %}
+                </nav>
+            </aside>
+            {% endif %}
 
 			<footer class="page__meta">
 				{% if site.data.ui-text[site.locale].meta_label %}
@@ -85,7 +100,8 @@ layout: default
 	</article>
 
 	{% comment %}
-	<!-- only show related on a post page when not disabled -->{% endcomment %}
+    <!-- only show related on a post page when not disabled -->
+    {% endcomment %}
 
 	{% if page.id and page.related and site.related_posts.size > 0 %}
 		<div class="page__related">

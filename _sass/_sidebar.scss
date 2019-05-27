@@ -7,8 +7,8 @@
    ========================================================================== */
 
 .sidebar {
-  -webkit-transform: translate3d(0, 0 , 0);
-          transform: translate3d(0, 0 , 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 
   @include clearfix();
   margin-bottom: 1em;
@@ -50,19 +50,17 @@
 }
 
 .sidebar__right {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
+  
+    @include breakpoint($large) {
+        position: fixed;
+        float: right;
+        width: 16%;
+        z-index: 2;
+        right: 2%;
+        top: 10.5%;
+    }
 
-  @include breakpoint($large) {
-    position: relative;
-    float: right;
-    width: $right-sidebar-width-narrow;
-    margin-left: span(0.5 of 12);
-    z-index: 10;
-  }
-
-  @include breakpoint($x-large) {
-    width: $right-sidebar-width;
-  }
 }
 
 /*

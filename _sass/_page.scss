@@ -19,13 +19,12 @@
 .page {
   @include breakpoint($large) {
     @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    @include prefix(0.2 of 12);
+    @include suffix(0 of 12);
   }
 
   .page__inner-wrap {
     @include full();
-
     .page__content,
     .page__meta,
     .page__share {
@@ -105,6 +104,8 @@
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
+
+  width: 78% !important;
 }
 
 .page__hero {
