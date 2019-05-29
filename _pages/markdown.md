@@ -1,40 +1,25 @@
 ---
+title: "Markup: HTML Elements and Formatting"
+sub_title: "The common elements"
 permalink: /markdown/
-title: "Markdown"
-author_profile: true
 redirect_from: 
   - /md/
   - /markdown.html
+categories:
+  - Markup
+elements:
+  - content
+  - css
+  - formatting
+  - html
+  - markup
 ---
 
-## Locations of key files/directories
+A variety of common HTML elements to demonstrate the theme's stylesheet and verify they have been styled appropriately.
 
-* Basic config options: _config.yml
-* Top navigation bar config: _data/navigation.yml
-* Single pages: _pages/
-* Collections of pages are .md or .html files in:
-  * _publications/
-  * _portfolio/
-  * _posts/
-  * _teaching/
-  * _talks/
-* Footer: _includes/footer.html
-* Static files (like PDFs): /files/
-* Profile image (can set in _config.yml): images/profile.png
+# Header one
 
-## Tips and hints
-
-* Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
-* Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version Github built with Jekyll. 
-  * Green check: successful build
-  * Orange circle: building
-  * Red X: error
-  * No icon: not built
-
-## Resources
- * [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/)
-
-## Markdown guide
+## Header two
 
 ### Header three
 
@@ -48,19 +33,26 @@ redirect_from:
 
 Single line blockquote:
 
-> Quotes are cool.
+> Stay hungry. Stay foolish.
+
+Multi line blockquote with a cite reference:
+
+> People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things.
+>
+> <footer><strong>Steve Jobs</strong> &mdash; Apple Worldwide Developers' Conference, 1997</footer>
+
+Quoted text inline using `<q>` element:
+
+<p>Luke continued, <q>And then she called him a <q>scruffy-looking nerf-herder</q>! I think I’ve got a chance!</q> The poor naive fool&hellip;</p>
 
 ## Tables
 
-### Table 1
-
-| Entry            | Item   |                                                              |
-| --------         | ------ | ------------------------------------------------------------ |
-| [John Doe](#)    | 2016   | Description of the item in the list                          |
-| [Jane Doe](#)    | 2019   | Description of the item in the list                          |
-| [Doe Doe](#)     | 2022   | Description of the item in the list                          |
-
-### Table 2
+| Employee         | Salary |                                                              |
+|------------------|--------|--------------------------------------------------------------|
+| [John Doe](#)    | $1     | Because that's all Steve Jobs needed for a salary.           |
+| [Jane Doe](#)    | $100K  | For all the blogging she does.                               |
+| [Fred Bloggs](#) | $100M  | Pictures are worth a thousand words, right? So Jane × 1,000. |
+| [Jane Bloggs](#) | $100B  | With hair like that?! Enough said.                           |
 
 | Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
@@ -75,16 +67,16 @@ Single line blockquote:
 ## Definition Lists
 
 Definition List Title
-:   Definition list division.
+: Definition list division.
 
 Startup
-:   A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
+: A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
 
 #dowork
-:   Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
+: Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
 
 Do It Live
-:   I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
+: I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
 
 ## Unordered Lists (Nested)
 
@@ -120,83 +112,132 @@ Do It Live
 
 Make any link standout more when applying the `.btn` class.
 
+```html
+<a href="#" class="btn--success">Success Button</a>
+```
+
+[Default Button](#){: .btn}
+[Primary Button](#){: .btn .btn--primary}
+[Success Button](#){: .btn .btn--success}
+[Warning Button](#){: .btn .btn--warning}
+[Danger Button](#){: .btn .btn--danger}
+[Info Button](#){: .btn .btn--info}
+[Inverse Button](#){: .btn .btn--inverse}
+[Light Outline Button](#){: .btn .btn--light-outline}
+
+```markdown
+[Default Button Text](#link){: .btn}
+[Primary Button Text](#link){: .btn .btn--primary}
+[Success Button Text](#link){: .btn .btn--success}
+[Warning Button Text](#link){: .btn .btn--warning}
+[Danger Button Text](#link){: .btn .btn--danger}
+[Info Button Text](#link){: .btn .btn--info}
+[Inverse Button](#link){: .btn .btn--inverse}
+[Light Outline Button](#link){: .btn .btn--light-outline}
+```
+
+[X-Large Button](#){: .btn .btn--primary .btn--x-large}
+[Large Button](#){: .btn .btn--primary .btn--large}
+[Default Button](#){: .btn .btn--primary }
+[Small Button](#){: .btn .btn--primary .btn--small}
+
+```markdown
+[X-Large Button](#link){: .btn .btn--primary .btn--x-large}
+[Large Button](#link){: .btn .btn--primary .btn--large}
+[Default Button](#link){: .btn .btn--primary }
+[Small Button](#link){: .btn .btn--primary .btn--small}
+```
+
 ## Notices
 
-**Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
+**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice}` class.
 {: .notice}
 
-## HTML Tags
+**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--primary}` class.
+{: .notice--primary}
 
-### Address Tag
+**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--info}` class.
+{: .notice--info}
+
+**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--warning}` class.
+{: .notice--warning}
+
+**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--success}` class.
+{: .notice--success}
+
+**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--danger}` class.
+{: .notice--danger}
+
+## Address element
 
 <address>
   1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
 </address>
 
-### Anchor Tag (aka. Link)
+## Anchor element (aka. Link)
 
-This is an example of a [link](http://github.com "Github").
+This is an example of a [link](http://apple.com "Apple").
 
-### Abbreviation Tag
+## Abbreviation element
 
 The abbreviation CSS stands for "Cascading Style Sheets".
 
 *[CSS]: Cascading Style Sheets
 
-### Cite Tag
+## Cite element
 
 "Code is poetry." ---<cite>Automattic</cite>
 
-### Code Tag
+## Code element
 
 You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
 
-### Strike Tag
+## Strike element
 
-This tag will let you <strike>strikeout text</strike>.
+This element will let you <strike>strikeout text</strike>.
 
-### Emphasize Tag
+## Emphasize element
 
-The emphasize tag should _italicize_ text.
+The emphasize element should _italicize_ text.
 
-### Insert Tag
+## Insert element
 
-This tag should denote <ins>inserted</ins> text.
+This element should denote <ins>inserted</ins> text.
 
-### Keyboard Tag
+## Keyboard element
 
-This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` tag.
+This scarcely known element emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` element.
 
-### Preformatted Tag
+## Preformatted element
 
-This tag styles large blocks of code.
+This element styles large blocks of code.
 
 <pre>
 .post-title {
-  margin: 0 0 5px;
-  font-weight: bold;
-  font-size: 38px;
-  line-height: 1.2;
-  and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
+	margin: 0 0 5px;
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 1.2;
+	and here's a line of some really, really, really, really long text, just to see how the PRE element handles it and to find out how it overflows;
 }
 </pre>
 
-### Quote Tag
+## Quote element
 
 <q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
 
-### Strong Tag
+## Strong element
 
-This tag shows **bold text**.
+This element shows **bold text**.
 
-### Subscript Tag
+## Subscript element
 
 Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
 
-### Superscript Tag
+## Superscript element
 
 Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
 
-### Variable Tag
+## Variable element
 
 This allows you to denote <var>variables</var>.
