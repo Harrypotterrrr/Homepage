@@ -95,7 +95,7 @@ author:
   twitter          : "Harrypotterrrr7"
   # steam            : "76561198378260096/"
   researchgate     : # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              : # "http://Harrypotterrrr.github.io"
+  uri              : "http://Harrypotterrrr.github.io"
   bitbucket        :
   codepen          :
   dribbble         :
@@ -116,6 +116,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
+  podcast          : "263691122"
 
 
 # Reading Files
