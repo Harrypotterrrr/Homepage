@@ -225,9 +225,11 @@ generate password
 
 `jupyter notebook password`
 
-**Starting the notebook server before setting up the password**
+**Warning:** Starting the notebook server before setting up the password
+{: .notice--warning}
 
-**After using this way to creat a port, `jupyter notebook stop` command is usually invalid, therefore `kill` is commended**
+**Info:** After using this way to creat a port, `jupyter notebook stop` command is usually invalid, therefore `kill` is commended
+{: .notice--info}
 
 - stop the jupyter with specific port
 
@@ -311,6 +313,7 @@ print(os.environ.get('LD_LIBRARY_PATH', None))
 
 add path of output to env variable in configuration
 
+
 ## Shadowsocks
 
 ### Server
@@ -343,12 +346,25 @@ less /var/log/shadowsocks.log
 
 ### Client
 
-- run in the background
+For linux operating system:
 
-```
-nohup sslocal -s $IP -p $SERVER_PORT -k "$PASSWORD" -l $CLIENT_PORT -t 600 -m aes-256-cfb &
-```
-where $SERVER_IP and $PASSWORD are refered to the ones of the server and $CLIENT_PORT is refered to the one of the client.  
+- create `SOCKS5` proxy
+
+```bash
+nohup sslocal -s $IP -p $SERVER_PORT -k "$PASSWORD" -l $CLIENT_PORT [-d 0.0.0.0] -t 600 -m aes-256-cfb &
+``` 
+<a id="sslocal"></a>
+
+where `$SERVER_IP` and `$PASSWORD` are refered to the ones of the server and `$CLIENT_PORT` is refered to the one of the client.  
+
+**Note that** different from `vpn` global proxy,`sslocal`(shadowsocks on linux) creates a tunnel of `SOCKS5` proxy and only works for browsers rather than running files or applications such as `curl`, `wget` or any other commands in bash. 
+{: .notice--danger}
+
+There are two ways to hook calls from local programs to sockets and redirect it through one or more socks/http proxies.
+
+1. Use `proxychains4` to force applications to go through `SOCKS5` proxy. [link](#Proxychains)
+
+2. Use `privoxy` to convert `SOCKS5` into `HTTP` proxy, and support program using it by exporting the environment variable. [link](https://blog.liuguofeng.com/p/4010) **TO BE DONE BY SELF**
 
 - check running status
 
@@ -356,7 +372,7 @@ where $SERVER_IP and $PASSWORD are refered to the ones of the server and $CLIENT
 systemctl status rc-local.service
 ```
 
-- use shadowsockssr source code to run
+- use shadowsockssr JSON config file to run
 
 ```
 git clone https://github.com/shadowsocksrr/shadowsocksr
@@ -364,6 +380,53 @@ vim config.json
 cd shadowsocks/
 ./local.py -c ../config.json
 ```
+
+## Proxychains
+
+Here I demonstrate to download a large file from google drive.
+
+### Preliminaries
+
+- installation
+
+For the non-root user of the server, using `Linuxbrew` to install it is recommended
+
+`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
+- modify the config file
+
+`vim ~/.linuxbrew/etc/proxychains.conf`
+
+change the last line of the config file to your specified port with `SOCKS5`, e.g. `socks5  127.0.0.1 $LOCAL_PORT`
+
+where the `$LOCAL_PORT` is same to the one in `SOCKS5` creating command as `sslocal ... $CLIENT_PORT` [link](#sslocal)
+
+
+### Test
+
+Comparing `curl google.com` to `proxychains4 curl google.com`
+
+### Fetching file
+
+Each file shared on Google drive has a unique id (`$FILE_ID`), like `1UFaRl_3EGK0hSBlmB6AJVeZZ_r-SHQLm` in `https://drive.google.com/uc?id=1UFaRl_3EGK0hSBlmB6AJVeZZ_r-SHQLm&export=download`
+
+There are two ways to download it
+
+- By `wget` command (Recommand)
+
+append proxychains4 as the prefix to any commands
+
+`proxychains4 wget --no-check-certificate -r 'https://docs.google.com/uc?export=download&id=$FILE_ID' -O $FILE_NAME`
+
+where `$FILE_ID` is an identifier to the shared file, and `$FILE_NAME` is the name of the output file.
+
+**Note that** `-r` is crucial and decide `wget` in recursive mode.
+
+- By `gdrive.sh` script
+
+`proxychains4 curl gdrive.sh | proxychains4 bash -s $FILE_ID`
+
+This solution is **unstable** in some cases, the above $FILE_ID mentioned is a case.
 
 ## Apache
 
