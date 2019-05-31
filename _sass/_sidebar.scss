@@ -53,13 +53,11 @@
     margin-bottom: 1em;
   
     @include breakpoint($large) {
-        position: fixed;
+        position: sticky;
         float: right;
-        width: 16%;
+        width: 20%;
+        top: 5%;
         z-index: 2;
-        right: 2%;
-        top: 10.5%;
-        z-index: -1;
     }
 
 }
