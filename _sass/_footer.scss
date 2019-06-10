@@ -25,16 +25,20 @@
 
   footer {
     @include clearfix;
-    margin-left: auto;
+    margin-left: 15%;
     margin-right: auto;
     margin-top: 2em;
     max-width: 100%;
     padding: 0 1em 2em;
 
+    float: left;
+
     @include breakpoint($x-large) {
       max-width: $x-large;
     }
   }
+
+
 
   a {
     color: inherit;
@@ -51,6 +55,12 @@
   .fal {
     color: mix(#fff, $gray, 25%);
   }
+}
+
+#clustrmaps-widget-v2 {
+  float: right ; 
+  margin-top: 10px !important;
+  margin-right: 25% !important;
 }
 
 .page__footer-copyright {
