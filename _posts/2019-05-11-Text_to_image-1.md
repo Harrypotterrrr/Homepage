@@ -51,7 +51,7 @@ $$
 
 The intuition here is that a text encoding should have a higher compatibility score with image of the corresponding class and vice-versa **TOREAD**
 
-### Network structure
+## Network structure
 
 There is no particular to the total architecture of network, except for the conditions which is encoded from the text description and concatenated to noise afterwards. Two different full-connected layers are implemented to encode text description both in upsampling and downsampling model. 
 
