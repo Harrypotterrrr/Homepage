@@ -1,7 +1,7 @@
 ---
 title: 'Linux cookbook'
 date: 2019-02-16
-modified: 2019-05-15
+modified: 2019-06-22
 permalink: /posts/2019/02/Linux-cookbook/
 tags:
   - cookbook
@@ -101,6 +101,50 @@ export CODE_SERVER_PATH PATH
 Generally, `.sh` file is not executable execept its mode has been changed:
 
 `chmod a+x <FILE_NAME>.sh`
+
+## Ruby
+
+### Installation
+
+To install the ruby **without privilege of root**, the third-party package `RVM` is strongly suggested. [reference link](https://blog.codeminer42.com/4-5-ways-to-install-ruby-in-userspace-d26b0ba43610)
+
+- using RVM
+
+RVM installer script uses GPG to check signatures; because of that, the first thing to do is to download the gpg key
+
+```bash
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+```
+
+then download and execute the script from https://get.rvm.io:
+
+```bash
+curl -sSL https://get.rvm.io | bash -s stable
+```
+
+source the file
+
+```bash
+source ~/.rvm/scripts/rvm
+```
+
+**disable RVM from trying to install necessary software via apt-get**
+
+```bash
+rvm autolibs disable
+```
+
+get the listt of known Ruby versions
+
+```bash
+rvm list known
+```
+
+install the latest, eg:
+
+```bash
+rvm install 2.6.3
+```
 
 
 ## Shell
