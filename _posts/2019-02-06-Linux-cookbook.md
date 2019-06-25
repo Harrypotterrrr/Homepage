@@ -347,6 +347,26 @@ import MyPackage.modeul1
 and `init file` of the package must be built in previous. Another is that `current working directory(cwd)` must be appended to `system path`
 
 
+## Virtualenv
+
+- create virtual environment
+
+```bash
+virtualenv <env_name>
+```
+
+- activate the virtualenv
+
+```bash
+source <env_name>/bin/activate
+```
+
+- deactivate the virtualenv
+
+```bash
+deactivate
+```
+
 ## Remote pycharm
 
 - import tf error
@@ -356,6 +376,7 @@ print(os.environ.get('LD_LIBRARY_PATH', None))
 ```
 
 add path of output to env variable in configuration
+
 
 
 ## Shadowsocks
