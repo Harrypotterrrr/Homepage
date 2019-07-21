@@ -14,6 +14,8 @@ The note of [*Generative Adversarial Text to Image Synthesis*](https://arxiv.org
 
 <!--more-->
 
+{% katexmm %}
+
 ## Overview
 
 For text to image, there are many plausible value to one pixel that correctly illustrate the description of the text, since the the distribution of image conditioned on the text is highly multimodal, e.g. small changes of text description may affect pixel values with low correlation across a wide range.  
@@ -27,7 +29,7 @@ For image to text, it is much practical to decompose the sequence according to t
 It is common to maximize $\log (D(G(z)))$ for the generator, while it is found to be more effective to minimize maximize $\log (1-D(G(z)))$ instead.
 
 $$
-\begin{array}{r}{\min _{G} \max _{D} V(D, G)=\mathbb{E}_{x \sim p_{\text {data}}(x)}[\log D(x)]} + {\mathbb{E}_{x \sim p_{z}(z)}[\log (1-D(G(z)))]}\end{array}
+\begin{aligned} \min _{G} \max _{D} V(D, G)=& \mathbb{E}_{x \sim p_{\text { data }}(x)}[\log D(x)]+\\ & \mathbb{E}_{x \sim p_{z}(z)}[\log (1-D(G(z)))] \end{aligned}
 $$
 
 ### Joint embedding with symmetric structure
@@ -40,7 +42,8 @@ $$
 f_{v}(v) =\underset{y \in \mathcal{Y}}{\arg \max } \mathbb{E}_{t \sim \mathcal{T}(y)}\left[\phi(v)^{T} \varphi(t)\right]
 $$
 
-$$ f_{t}(t) =\underset{y \in \mathcal{Y}}{\arg \max } \mathbb{E}_{v \sim \mathcal{V}(y)}\left[\phi(v)^{T} \varphi(t)\right]
+$$
+f_{t}(t) =\underset{y \in \mathcal{Y}}{\arg \max } \mathbb{E}_{v \sim \mathcal{V}(y)}\left[\phi(v)^{T} \varphi(t)\right]
 $$
 
 Then optimize the following structured loss:
@@ -64,7 +67,12 @@ Two sources of error should be considered: unrealistic (bad generation) images, 
 For this reason, apart from origin losses: real image with right text and fake image with false text, additional loss: real image with false text, is added to train the discriminator to have the ability of discriminate whether the generated image match the text or not, instead of only to measure the quality of output image.
 
 $$
-\begin{array}{l} {s_{r} \leftarrow D(x, h)\{\text { real image, right text }\}} \\ {s_{w} \leftarrow D(x, \hat{h})\{\text { real image, wrong text }\}} \\ {s_{f} \leftarrow D(\hat{x}, h)\{\text { fake image, right text }\}} \\ {\mathcal{L}_{D} \leftarrow \log \left(s_{r}\right)+\left(\log \left(1-s_{w}\right)+\log \left(1-s_{f}\right)\right) / 2}\end{array}
+\begin{aligned}
+  s_{r} \leftarrow & D(x, h)\{\text { real image, right text }\} \\ 
+  s_{w} \leftarrow & D(x, \hat{h})\{\text { real image, wrong text }\} \\ 
+  s_{f} \leftarrow & D(\hat{x}, h)\{\text { fake image, right text }\} \\ 
+  \mathcal{L}_{D} \leftarrow & \log \left(s_{r}\right)+\left(\log \left(1-s_{w}\right)+\log \left(1-s_{f}\right)\right) / 2
+\end{aligned}
 $$
 
 ### GAN_INT
@@ -79,8 +87,9 @@ The generator can learn an ability of generate the 'interpolated image' and fill
 Note that there is no need to add label of interpolated vector for they are synthetic and fake.
 
 $$
-\mathbb{E}_{t_{1}, t_{2} \sim p_{\text {data}}}\left[\log \left(1-D\left(G\left(z, \beta t_{1}+(1-\beta) t_{2}\right)\right)\right)\right]
+\mathbb{E}_{t_{1}, t_{2} \sim p_{d a t a}}\left[\log \left(1-D\left(G\left(z, \beta t_{1}+(1-\beta) t_{2}\right)\right)\right)\right]
 $$
+
 
 ### Disentangling style and content
 
@@ -101,3 +110,5 @@ $$
 ![ROC_curve](/assets/images/2019/05/text_to_image_1/ROC_curve.png)
 
 For evaluation, `cosine similarity` and `ROC` is used as showed in the above figure. Images with similar and dissimilar content and style is selected and constructed as a pair, and if GAN has disentangled ability, the similarity between noises inverted from images of the same style (e.g. similar pose) should be higher than that of different styles (e.g. different pose).
+
+{% endkatexmm %}

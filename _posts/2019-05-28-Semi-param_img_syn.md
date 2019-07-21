@@ -15,6 +15,8 @@ The note of [*Semi-parametric Image Synthesis*](https://arxiv.org/abs/1804.10992
 
 <!--more-->
 
+{% katexmm %}
+
 ## Overview
 
 It presents a semi-parametric approach of photographic image synthesis from semantic layouts.
@@ -44,7 +46,7 @@ The first and crucial thing is to build the External memory bank (database) $M$.
 
 ![canvas_build](/assets/images/2019/05/semi_param_img_syn/canvas_build.png)
 
-**At test time**, Semantic map $L \in\\{0,1\\}^{h\times w \times c} $, where $h \times w$ is the size of images and $c$ is the number of semantic classes, which was not seen during training, is decomposed into connected components $\left\\{L_{i}\right\\}$. For each $\left\\{L_{i}\right\\}$, a compatible segment $P_{i}$ from $M$ is retrieved based on shape, location and context and then aligned to $L_{i}$ by a spatial Transformation network. With the help of the Ordering network, relative front-back order of segments is determined and canvas $C$ is synthesized with deliberately elided boundaries of retrieved segments.
+**At test time**, Semantic map $L \in\{0,1\}^{h\times w \times c} $, where $h \times w$ is the size of images and $c$ is the number of semantic classes, which was not seen during training, is decomposed into connected components $\left\{L_{i}\right\}$. For each $\left\{L_{i}\right\}$, a compatible segment $P_{i}$ from $M$ is retrieved based on shape, location and context and then aligned to $L_{i}$ by a spatial Transformation network. With the help of the Ordering network, relative front-back order of segments is determined and canvas $C$ is synthesized with deliberately elided boundaries of retrieved segments.
 
 ![img_synthesis](/assets/images/2019/05/semi_param_img_syn/img_synthesis.png)
 
@@ -56,7 +58,7 @@ Furthermore, [cascaded refinement network](https://arxiv.org/abs/1707.09405) is 
 
 ### Representation of memory bank
 
-A segment $P_{i}$ is associated with a tuple $\left(P_{i}^{\text {color}}, P_{i}^{\text {mask}}, P_{i}^{\text {cont}}\right)$, where $P_{i}^{c o l o r} \in \mathbb{R}^{h \times w \times 3}$ is a color image that contains the segment (other pixels are zeroed out as showed in the first image), $P_{i}^{m a s k} \in\\{0,1\\}^{h \times w \times c}$ is a binary mask that specifies the segment's footprint, and $P_{i}^{c o n t} \in\\{0,1\\}^{h \times w \times c}$ is a semantic map representing the semantic context around $P_{i}$ within a bounding box enlarged by 25% to the $P_{i}^{\text {color}}$.
+A segment $P_{i}$ is associated with a tuple $\left(P_{i}^{\text {color}}, P_{i}^{\text {mask}}, P_{i}^{\text {cont}}\right)$, where $P_{i}^{c o l o r} \in \mathbb{R}^{h \times w \times 3}$ is a color image that contains the segment (other pixels are zeroed out as showed in the first image), $P_{i}^{m a s k} \in\{0,1\}^{h \times w \times c}$ is a binary mask that specifies the segment's footprint, and $P_{i}^{c o n t} \in\{0,1\}^{h \times w \times c}$ is a semantic map representing the semantic context around $P_{i}$ within a bounding box enlarged by 25% to the $P_{i}^{\text {color}}$.
 
 ### Segment retrieval
 
@@ -70,7 +72,7 @@ $$
 
 The transformation network $T$ is designed to transform $P_{\sigma(j)}$ to align $L_{j}$ via translation, rotation, scaling and clipping while preserving the integrity of the appearance.
 
-By simulating the inconsistencies in shape, scale and location that $T$ encounters at test time, $T$ can be trained with the input $\hat{P}\_{i}^{\text { color }}$ which is applied random affine transformations and cropped from $P_{i}^{\text { color }}$. 
+By simulating the inconsistencies in shape, scale and location that $T$ encounters at test time, $T$ can be trained with the input $\hat{P}_{i}^{\text { color }}$ which is applied random affine transformations and cropped from $P_{i}^{\text { color }}$. 
 
 The loss function for $T$ is as follows, and is defined over the color images rather than the mask so as to be more **specific** and better to constran the transformation.
 
@@ -129,3 +131,5 @@ Future work includes:
 - not end-to-end
 
 - the frontier of video synthesis
+
+{% endkatexmm %}

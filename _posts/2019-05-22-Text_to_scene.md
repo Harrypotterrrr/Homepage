@@ -14,6 +14,8 @@ The note of [*Text2Scene: Generating Compositional Scenes from Textual Descripti
 
 <!--more-->
 
+{% katexmm %}
+
 ## Overview
 
 Unlike the previous work, this paper doesn't adopt Generative adversarial network, but a combination of encoder-decoder architecture with a semi-parametric retrieval-based approach **TOREAD**. Under minor modification, this model performs decent generation of different forms of scene representation, including clip-art generation on *Abstract Scenes*, semantic layout on *COCO* and compositional image generation on *COCO*.
@@ -59,7 +61,7 @@ here BIGRU is a bidirectional GRU cell, $ x_{i} $ is a word embedding and $h_{i}
 
 ### Image encoder and recurrent module
 
-To use a convolutional network $\Omega$ to encode current canvas ${B}\_{t}$ into a $\mathcal{C} \times H \times W$ feature map representing the current scene state, and to model the history of the scene state $ \left\\{ h_{t}^{D} \right\\} $ by a convolutional GRU. $ h_{t}^{D}$ is an important representation of both temporal and spatial dynamical information.
+To use a convolutional network $\Omega$ to encode current canvas ${B}_{t}$ into a $\mathcal{C} \times H \times W$ feature map representing the current scene state, and to model the history of the scene state $ \left\{ h_{t}^{D} \right\} $ by a convolutional GRU. $ h_{t}^{D}$ is an important representation of both temporal and spatial dynamical information.
 
 $$
 h_{t}^{D}=\operatorname{ConvGRU}\left(\Omega\left(B_{t}\right), h_{t-1}^{D}\right)
@@ -70,13 +72,13 @@ In case that $h_{t}^{D}$ fails to capture small objects, previous step $ {o}_{t-
 ### Attention-based object decoder
 
 The object decoder based on attention mechanism outputs the likelihhod score on all objects in object vocabulary library $\mathcal{V}$, and takes as input:
-- the current scene state $ \left\\{ h_{t}^{D} \right\\} $
-- the text features $ \left\\{\left(h_{i}^{E}, x_{i}\right)\right\\} $
+- the current scene state $ \left\{ h_{t}^{D} \right\} $
+- the text features $ \left\{\left(h_{i}^{E}, x_{i}\right)\right\} $
 - the preiviously predicted object $ o_{t-1} $
 
 > Spatial attention convolutional network
 
-where $\Psi$ is a convolutional network with **spatial attention** on $ \left\\{ h_{t}^{D} \right\\} $ to collect spatial contexts for the object prediction, e.g. what objects have already been added. Then by average pooling layer, the attended features are fused into a vector $u_{t}^{o}$.
+where $\Psi$ is a convolutional network with **spatial attention** on $ \left\{ h_{t}^{D} \right\} $ to collect spatial contexts for the object prediction, e.g. what objects have already been added. Then by average pooling layer, the attended features are fused into a vector $u_{t}^{o}$.
 
 $$
 u_{t}^{o}=\text { AvgPooling }\left(\Psi^{o}\left(h_{t}^{D}\right)\right)
@@ -84,7 +86,7 @@ $$
 
 > Text-based attention module
 
-Text-based attention module $\Phi$ uses $u_{t}^{o}$ to attend to the text features $ \left\\{\left(h_{i}^{E}, x_{i}\right)\right\\} $, and encodes the knowledge of all described objects having been added to the scene thus far ideally.
+Text-based attention module $\Phi$ uses $u_{t}^{o}$ to attend to the text features $ \left\{\left(h_{i}^{E}, x_{i}\right)\right\} $, and encodes the knowledge of all described objects having been added to the scene thus far ideally.
 
 $$
 c_{t}^{o}=\Phi^{o}\left(\left[u_{t}^{o} ; o_{t-1}\right],\left\{\left(h_{i}^{E}, x_{i}\right)\right\}\right)
@@ -101,7 +103,7 @@ $$
 
 ### Attention-based attribute decoder
 
-For each spatial location in $h_{t}^{D}$, This part predicts both location liikelihood $\left\\{l_{t}^{i}\right\\}\_{i=1 \ldots N}$ and attribute likelihoods $\left\\{R_{t}^{k}\right\\}$ to the object $o_{t}$. Here possible locations are discretized into the same resolution of $h_{t}^{D}$. **TOREAD**
+For each spatial location in $h_{t}^{D}$, This part predicts both location likelihood $\left\{l_{t}^{i}\right\}_{i=1 \ldots N}$ and attribute likelihoods $\left\{R_{t}^{k}\right\}$ to the object $o_{t}$. Here possible locations are discretized into the same resolution of $h_{t}^{D}$. **TOREAD**
 
 > "Zoom in" module
 
@@ -131,8 +133,7 @@ $$
 
 ### Foreground patch embedding
 
-For the third mission to generate images composed of patches retrieved from others, a particular $Q_{t}$ is proposed to predict every location in the output feature map but is used at test time to retrieve similar patches from pre-computed collection of object segments from other images **TOREAD**. A patch embedding network using a CNN reduces the foreground patch of target image into a 1D vector $F_{t}$. To minimize the $\ell_{2}$-distance between $Q_{t}$ and $F_{t}$, it uses the triplet embedding loss ($P^\text {color}$, $P^\text {mask}$, $P^\text {context}$) to minimize the distance of $\left\|Q_{t}, F_{t}\right\|\_{2}$ and maximize the distance of $\left\|Q_{t}, F_{k}\right\|\_{2}$. Here $F_{k}$ is the feature of a *negative* patch randonly selected from the same category of $F_{t}$. **TOREAD**
-
+For the third mission to generate images composed of patches retrieved from others, a particular $Q_{t}$ is proposed to predict every location in the output feature map but is used at test time to retrieve similar patches from pre-computed collection of object segments from other images **TOREAD**. A patch embedding network using a CNN reduces the foreground patch of target image into a 1D vector $F_{t}$. To minimize the $\ell_{2}$-distance between $Q_{t}$ and $F_{t}$, it uses the triplet embedding loss ($P^\text {color}$, $P^\text {mask}$, $P^\text {context}$) to minimize the distance of $\left\|Q_{t}, F_{t}\right\|_{2}$ and maximize the distance of $\left\|Q_{t}, F_{k}\right\|_{2}$. Here $F_{k}$ is the feature of a *negative* patch randonly selected from the same category of $F_{t}$. **TOREAD**
 $$
 L_{\text {triplet}}\left(Q_{t}, F_{t}\right)=\max \left\{\left\|Q_{t}, F_{t}\right\|_{2}-\left\|Q_{t}, F_{k}\right\|_{2}+\alpha, 0\right\}
 $$
@@ -141,7 +142,7 @@ where $\alpha$ is a margin hyper-parameter.
 
 ## Objective
 
-The loss function with reference values $\left(O_{t}, l_{t},\left\\{R_{t}^{k}\right\\}, F_{t}\right)$ is:
+The loss function with reference values $\left(O_{t}, l_{t},\left\{R_{t}^{k}\right\}, F_{t}\right)$ is:
 
 $$
 L= -w_{o} \sum_{t} \log p\left(o_{t}\right)-w_{l} \sum_{t} \log p\left(l_{t}\right) -\sum_{k} w_{k} \sum_{t} \log p\left(R_{t}^{k}\right)\\ 
@@ -154,3 +155,4 @@ where $L_{a t t n}^{*}$ are regularization terms inspired by the doubly stochast
 
 Text2Scene model demonstrates the capacity on both abstract and real images, which opens the possibility for future work on transfer learning across domains.
 
+{% endkatexmm %}
