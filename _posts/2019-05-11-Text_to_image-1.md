@@ -12,6 +12,8 @@ excerpt_separator: <!--more-->
 
 The note of [*Generative Adversarial Text to Image Synthesis*](https://arxiv.org/abs/1605.05396)
 
+tttt
+
 <!--more-->
 
 {% katexmm %}
