@@ -25,6 +25,7 @@
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
 <!-- For the mathJax rendering -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML'></script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     jax: ["input/TeX", "output/HTML-CSS"],
@@ -57,7 +58,8 @@
               "background-color": "#fafafa !important",
               padding: "2px 2px 2px 2px !important"
           },
-      }
+      },
+      availableFonts: ["TeX", "STIX",],
     },
     SVG: {
       scale: 120,
@@ -68,7 +70,6 @@
     }
   });
 </script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS_CHTML' async></script>
 
 <!-- For the Katex inner rendering -->
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
