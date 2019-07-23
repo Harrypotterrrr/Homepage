@@ -12,11 +12,7 @@ excerpt_separator: <!--more-->
 
 The note of [*Generative Adversarial Text to Image Synthesis*](https://arxiv.org/abs/1605.05396)
 
-tttt
-
 <!--more-->
-
-{% katexmm %}
 
 ## Overview
 
@@ -28,7 +24,7 @@ For image to text, it is much practical to decompose the sequence according to t
 
 ### GAN
 
-It is common to maximize $\log (D(G(z)))$ for the generator, while it is found to be more effective to minimize maximize $\log (1-D(G(z)))$ instead.
+It is common to maximize $$\log (D(G(z)))$$ for the generator, while it is found to be more effective to minimize maximize $$\log (1-D(G(z)))$$ instead.
 
 $$
 \begin{aligned} \min _{G} \max _{D} V(D, G)=& \mathbb{E}_{x \sim p_{\text { data }}(x)}[\log D(x)]+\\ & \mathbb{E}_{x \sim p_{z}(z)}[\log (1-D(G(z)))] \end{aligned}
@@ -36,9 +32,9 @@ $$
 
 ### Joint embedding with symmetric structure
 
-The purpose of this structure is to obtain $\varphi(t)$ which can encode text description to visually-discriminative vector.
+The purpose of this structure is to obtain $$\varphi(t)$$ which can encode text description to visually-discriminative vector.
 
-Denote the classifier as followed, where $\phi(v)$ is the image encoder, and $\varphi(t)$ is the text encoder. Inner-product of vectors can be interpreted to some degree as the distance or similarity of two vectors.
+Denote the classifier as followed, where $$\phi(v)$$ is the image encoder, and $$\varphi(t)$$ is the text encoder. Inner-product of vectors can be interpreted to some degree as the distance or similarity of two vectors.
 
 $$
 f_{v}(v) =\underset{y \in \mathcal{Y}}{\arg \max } \mathbb{E}_{t \sim \mathcal{T}(y)}\left[\phi(v)^{T} \varphi(t)\right]
@@ -101,16 +97,16 @@ By content, we mean the visual attributes of the bird itself, such as shape, siz
 
 Therefore, generative model must learn to use noise, the prior-condition, to represent style variations in order to generate realistic image.
 
-Inverting generative model $S$ for style transfer is designed to transfer the generative image back into noise z with the following loss,
+Inverting generative model $$S$$ for style transfer is designed to transfer the generative image back into noise z with the following loss,
 
 $$
 \mathcal{L}_{\text {style}}=\mathbb{E}_{t, z \sim \mathcal{N}(0,1)}\|z-S(G(z, \varphi(t)))\|_{2}^{2}
 $$
 
-> It is a bit difficult to understand the implication this model. To make sense of this, we can interpret this inverted model $S$ as to measure the ability of $G$ to output a generative image with both decent content and style in convergence case where $\mathcal{L}_{\text {style}}$ comes close to 0.
+> It is a bit difficult to understand the implication this model. To make sense of this, we can interpret this inverted model $$S$$ as to measure the ability of $$G$$ to output a generative image with both decent content and style in convergence case where $$\mathcal{L}_{\text {style}}$$ comes close to 0.
 
 ![ROC_curve](/assets/images/2019/05/text_to_image_1/ROC_curve.png)
 
 For evaluation, `cosine similarity` and `ROC` is used as showed in the above figure. Images with similar and dissimilar content and style is selected and constructed as a pair, and if GAN has disentangled ability, the similarity between noises inverted from images of the same style (e.g. similar pose) should be higher than that of different styles (e.g. different pose).
 
-{% endkatexmm %}
+
