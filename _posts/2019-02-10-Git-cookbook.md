@@ -171,6 +171,7 @@ git reflog
 ```
 
 - remove 
+
 ```
 git rm <file>
 git commit -m "xxxx"
@@ -278,6 +279,7 @@ git push -f origin master # to push by force
 ```
 
 - modify the commit date
+
 ```
 git commit --amend --date="$WEEK, $DAY $MONTH $YEAR $HOUR:$MINUTE:$SECOND +0800"
 ```
