@@ -1,7 +1,7 @@
 ---
 title: 'Linux cookbook'
 date: 2019-02-16
-modified: 2019-06-22
+modified: 2019-08-04
 permalink: /posts/2019/02/Linux-cookbook/
 tags:
   - cookbook
@@ -101,6 +101,30 @@ export CODE_SERVER_PATH PATH
 Generally, `.sh` file is not executable execept its mode has been changed:
 
 `chmod a+x <FILE_NAME>.sh`
+
+### less mode
+
+- `k` move upward a line
+
+- `j` move downward a line
+
+- `u` move upward a half page
+
+- `d` move downward a half page
+
+- `b` move upward an whole page
+
+- `f` move downward an whole page
+
+- `=` display the information of the current line
+
+- `\<string>` search forward in the file
+
+- `?<string>` search backward in the file
+
+- `n` search the next occurrence of the string
+
+- `N` search the previous occurrence of the string
 
 ## Ruby
 
