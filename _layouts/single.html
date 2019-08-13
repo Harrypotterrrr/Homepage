@@ -97,6 +97,24 @@ layout: default
 		{% if site.comments.provider and page.comments %}
 		{% include comments.html %}
 		{% endif %}
+
+		{% comment %}
+		<div id="gitmentContainer"></div>
+		<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+		<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+		<script>
+			var gitment = new Gitment({
+				owner: 'Harrypotterrrr',
+				repo: 'Homepage',
+				oauth: {
+					client_id: 'e0f286445f2236869beb',
+					client_secret: 'e40b9a7441954a0e2c51b57c4181c48154fcd1d6',
+				},
+			});
+			gitment.render('gitmentContainer');
+		</script>
+    	{% endcomment %}
+
 	</article>
 
 	{% comment %}

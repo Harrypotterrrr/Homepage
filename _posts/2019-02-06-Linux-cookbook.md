@@ -1,7 +1,7 @@
 ---
 title: 'Linux cookbook'
 date: 2019-02-16
-modified: 2019-08-04
+modified: 2019-08-12
 permalink: /posts/2019/02/Linux-cookbook/
 tags:
   - cookbook
@@ -17,8 +17,10 @@ This cookbook is built for quick and easy search for commands and deployments of
 
 - open HTTP server with specific port
 
-`python -m SimpleHTTPServer $PORT &`
-`python -m http.server $PORT`
+```
+python -m SimpleHTTPServer $PORT &
+python -m http.server $PORT
+```
 
 - Recursively count the number of file under current dirctory, including subdirctory
 
@@ -48,15 +50,21 @@ where `s` refers to SUM, and `h` refers to be friendly to human to view
 
 - look up public ip of the domain address
 
-`nslookup $DOMAIN_ADDRESS`
+```
+nslookup $DOMAIN_ADDRESS
+```
 
 - count the number of line of files
 
-`wc -l $FILE_NAME`
+```
+wc -l $FILE_NAME
+```
 
 - change access permission
 
-`chmod [Option] [ugoa][+-=][rwx] $FILE_NAME`
+```
+chmod [Option] [ugoa][+-=][rwx] $FILE_NAME
+```
 
 Option: -R recursive
 
@@ -72,6 +80,14 @@ Option: -R recursive
 | Read    							  | r      |
 | Write								  | w      |
 | Execute (or access for directories) | x      |
+
+- convert py2 to py3
+
+```
+2to3 [-w] [-n] <file_name>
+```
+
+`-w` will write to the origin file, `-n` will save a backup
 
 ### .bashrc file
 
