@@ -1,10 +1,10 @@
 ---
 title: 'Linux cookbook'
 date: 2019-02-16
-modified: 2019-09-07
+modified: 2019-09-06
 permalink: /posts/2019/02/Linux-cookbook/
 tags:
-  - cookbook
+    - cookbook
 excerpt_separator: <!--more-->
 ---
 
