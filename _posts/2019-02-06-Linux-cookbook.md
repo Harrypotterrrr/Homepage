@@ -1,7 +1,7 @@
 ---
 title: 'Linux cookbook'
 date: 2019-02-16
-modified: 2019-08-12
+modified: 2019-09-07
 permalink: /posts/2019/02/Linux-cookbook/
 tags:
   - cookbook
@@ -89,6 +89,20 @@ Option: -R recursive
 
 `-w` will write to the origin file, `-n` will save a backup
 
+- change default gpu to run xorg and gnome process
+
+modify `/usr/X11/xorg.conf` and replace BusID:
+
+```
+Section "Device"
+    Identifier     "Device0"
+    Driver         "nvidia"
+    VendorName     "NVIDIA Corporation"
+    BoardName      "GeForce TitanX"
+    BusID          "PCI:2:0:0" # change the BusID to what lspci | grep VGA shown
+EndSection
+```
+
 ### .bashrc file
 
 - `:` is to segregate the `PATH`
@@ -141,6 +155,22 @@ Generally, `.sh` file is not executable execept its mode has been changed:
 - `n` search the next occurrence of the string
 
 - `N` search the previous occurrence of the string
+
+## Ssh
+
+- Automatic log in to remote server
+
+add following to `~/.ssh/config`
+
+```
+Host <host_var>
+    HostName    <host_name>
+    Port        22
+    User        <user_name>
+```
+
+if public key is appended to the `server:/~/.ssh/authorized_keys`, password won't be needed
+
 
 ## Ruby
 

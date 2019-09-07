@@ -26,6 +26,14 @@ This is a cheatsheet for vim commands and operations.
 
  add `set number` in `~/.vimrc`
 
+### set mouse mode on
+
+add `set mouse=a` to `~/.vimrc`
+
+### set tab size
+
+add `set tabstop=4`
+
 ## Navigating
 
 ### Basic movement
