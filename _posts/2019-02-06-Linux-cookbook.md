@@ -156,6 +156,24 @@ Generally, `.sh` file is not executable execept its mode has been changed:
 
 - `N` search the previous occurrence of the string
 
+### nvidia-driver
+
+- `sudo dpkg -l | grep nvidia` list all drivers relative to nvidia
+
+- `sudo apt remove --purge '*nvidia*'` remove and clear specified package or drivers
+
+- `sudo dpkg --force-all -P <package>` forcely remove the library difficult to deleted in previous step
+
+- `sudo add-apt-repository ppa:graphics-drivers/ppa` add ppa for the installation
+
+- `ubuntu-drivers devices` show available drivers online
+
+- `sudo apt install nvidia-driver-<version> nvidia-settings` install nvidia driver
+
+- `cat /usr/local/cuda/version.txt` or `nvidia-smi` show the version of cuda
+
+- `cat /proc/driver/nvidia/version` or `nvidia-smi` show the version of nvidia-driver
+
 ## Ssh
 
 - Automatic log in to remote server

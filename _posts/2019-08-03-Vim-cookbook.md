@@ -1,7 +1,7 @@
 ---
 title: 'Vim cookbook'
 date: 2019-08-03
-modified: 2019-09-06
+modified: 2019-09-13
 permalink: /posts/2019/08/Vim-cookbook/
 tags:
     - cookbook
