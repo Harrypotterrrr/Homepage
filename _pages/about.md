@@ -11,16 +11,10 @@ toc: false
 
 ## Biography 
 
-I am a junior majoring computer science from Tongji University. I am now working as an internship in [Intelligent Big Data Visualization Lab](https://idvxlab.com/index.html) supervised by [Prof. Nan Cao](http://nancao.org/), and currently focusing on the sequence module transforming text descriptions to images or scenes. I am going to visit [Vision and Learning Lab](http://vllab.ucmerced.edu/), at Electrical Engineering and Computer Science, University of California at Merced, under the supervision of [Prof. Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/) and his [Ph.D. Yijun Li](https://sites.google.com/site/yijunlimaverick/). We will do some research in the field of image/video generation and synthesis.
-
-## Recent News
-
-- The notes of paper are updating continuously [[link]](/year-archive/)
+I have just been accepted as a MSCS student of NYU. I am going to work with [Daniele Panozzo](https://cims.nyu.edu/gcl/daniele.html) and focus on computer graphics. I got my Bachelor's degree in Computer Science at Tongji University, China, in 2016 and had been a research intern in [Intelligent Big Data Visualization Lab](https://idvxlab.com/index.html) supervised by [Prof. Nan Cao](http://nancao.org/). In the last year of my undergraduate period, I did research in the field of computer vision under the supervision of [Prof. Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/) and his [Ph.D. Taihong Xiao](https://prinsphield.github.io/) in University of California at Merced.
 
 ## Recent effort
 
-- An seq2seq model to generate a scene attending to text descriptions
+- Video enhancement
 
-- State-of-the-art and noval techniques of stylization
-
-- Vision algorithms in an adversarial environment
+- Rendering
