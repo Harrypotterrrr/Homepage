@@ -27,13 +27,18 @@ ul.toc {
     }
   }
 
-  .toc-h2,
-  .toc-h3,
+  .toc-h3 {
+    &, a {
+      font-size: map-get($base, font-size-toc-sm);
+      font-weight: map-get($base, font-weight);
+      line-height: map-get($base, line-height-xs);
+    }
+  }
   .toc-h4,
   .toc-h5,
   .toc-h6 {
     &, a {
-      font-size: map-get($base, font-size-xs);
+      font-size: map-get($base, font-size-toc-xs);
       font-weight: map-get($base, font-weight);
       line-height: map-get($base, line-height-xs);
     }
@@ -44,7 +49,7 @@ ul.toc {
     margin-bottom: map-get($spacers, 2);
     color: $text-color-d;
     &, a {
-      font-size: map-get($base, font-size-sm);
+      font-size: map-get($base, font-size-toc-lg);
       font-weight: map-get($base, font-weight-bold);
       line-height: map-get($base, line-height-sm);
     }
@@ -53,19 +58,33 @@ ul.toc {
     }
   }
   .toc-h2 {
+    @include split-line(bottom);
+    padding: map-get($spacers, 2) 0 map-get($spacers, 1) 0;
+    margin-bottom: map-get($spacers, 1);
+    color: $text-color-d;
     &, a {
+      font-size: map-get($base, font-size-toc-lg);
       font-weight: map-get($base, font-weight-bold);
+      line-height: map-get($base, line-height-sm);
+    }
+    a {
+      @include link-colors($text-color-d, $main-color-1);
     }
   }
   .toc-h3 {
+    &, a {
+      font-weight: map-get($base, font-weight-mid);
+    }
     margin-left: map-get($spacers, 3);
   }
   .toc-h4 {
     margin-left: map-get($spacers, 3) * 2;
   }
-  .toc-h5,
-  .toc-h6 {
+  .toc-h5 {
     margin-left: map-get($spacers, 3) * 3;
+  }
+  .toc-h6 {
+    margin-left: map-get($spacers, 3) * 4;
   }
   .toc-h6 {
     color: $text-color-l;

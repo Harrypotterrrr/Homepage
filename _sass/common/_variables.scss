@@ -11,6 +11,10 @@ $base: (
   font-size-sm:           .85rem,
   font-size-xs:           .7rem,
 
+  font-size-toc-lg:       0.9rem,
+  font-size-toc-sm:       0.8rem,
+  font-size-toc-xs:       0.7rem,
+
   font-size-h1-xl:        3.5rem,
   font-size-h2-xl:        2.5rem,
   font-size-h3-xl:        2rem,
@@ -47,6 +51,7 @@ $base: (
   font-size-h6-xs:        .85rem,
 
   font-weight:            400,
+  font-weight-mid:        500,
   font-weight-bold:       700,
 
   line-height-xl:         2,
