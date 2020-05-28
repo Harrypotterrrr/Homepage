@@ -1,11 +1,12 @@
 ---
-title: 'Git cookbook'
-date: 2019-02-10
-modified: 2019-05-02
-permalink: /posts/2019/02/Git-cookbook/
+layout: article
+title: "Git cookbook"
+aside:
+  toc: true
 tags:
   - cookbook
-excerpt_separator: <!--more-->
+date: 2019-02-10
+modify_date: 2019-05-02
 ---
 
 This cookbook is built for quick and easy search for Git commands

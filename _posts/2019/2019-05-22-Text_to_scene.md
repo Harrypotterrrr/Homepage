@@ -8,6 +8,7 @@ sidebar:
 tags:
   - paper read
   - computer vision
+date: 2019-05-22
 modify_date: 2019-05-25
 mathjax: true
 ---

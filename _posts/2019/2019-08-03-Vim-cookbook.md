@@ -1,12 +1,14 @@
 ---
-title: 'Vim cookbook'
-date: 2019-08-03
-modified: 2019-09-13
-permalink: /posts/2019/08/Vim-cookbook/
+layout: article
+title: "Vim cookbook"
+aside:
+  toc: true
 tags:
-    - cookbook
-excerpt_separator: <!--more-->
+  - cookbook
+date: 2019-08-03
+modify_date: 2019-09-13
 ---
+
 
 This is a cheatsheet for vim commands and operations.
 <!--more-->
