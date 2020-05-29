@@ -104,10 +104,6 @@ ul.toc--ellipsis {
 
 ul.toc--navigator {
   & > li {
-    a {
-      padding-left: map-get($spacers, 2);
-      margin: map-get($spacers, 1) 0;
-    }
     &.active {
       a {
         margin-left: -4px;
@@ -118,10 +114,12 @@ ul.toc--navigator {
   .toc-h2,
   .toc-h3,
   .toc-h4 {
-    color: $text-color-l;
     a {
-      @include link-colors($text-color-l);
+        padding-left: map-get($spacers, 2);
+        margin: map-get($spacers, 1) 0;
+        @include link-colors($text-color-l);
     }
+    color: $text-color-l;
   }
   .toc-h1 {
     &, a {
@@ -139,5 +137,8 @@ ul.toc--navigator {
       font-weight: map-get($base, font-weight-bold);
       line-height: map-get($base, line-height-sm);
     }
+    border: initial;
+    padding: initial;
+    margin-bottom: initial;
   }
 }
