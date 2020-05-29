@@ -19,6 +19,10 @@ ul.toc {
   .toc-h6 {
     a {
       @include link-colors($text-color, $main-color-1);
+      white-space: nowrap; 
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
     }
     &.active {
       a {
