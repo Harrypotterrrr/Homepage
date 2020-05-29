@@ -61,3 +61,25 @@ Cookbook:
         url:    /2019/06/20/Tmux-cookbook
       - title:  Vim-cookbook
         url:    /2019/08/03/Vim-cookbook
+
+Paper-read:
+  - title:      Text2Image
+    url:        /archive.html?tag=text2image
+    children:
+      - title:  Object-driven Text-to-Image Synthesis via Adversarial Training
+        url:    /2019/07/16/ObjGAN
+      - title:  Image generation from scene graphs
+        url:    /2019/07/13/Sg2im
+      - title:  Semi-parametric Image Synthesis
+        url:    /2019/05/28/Semi-param_img_syn
+      - title:  Text to scene
+        url:    /2019/05/22/Text_to_scene
+      - title:  StoryGAN
+        url:    /2019/07/14/storyGAN
+      - title:  Learning where and what to draw
+        url:    /2019/05/18/Text_to_image-2
+      - title:  Generative Adversarial Text to Image Synthesis
+        url:    /2019/05/11/Text_to_image-1
+
+  - title:      Video
+    url:        /archive.html?tag=video

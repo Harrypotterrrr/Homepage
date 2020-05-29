@@ -4,10 +4,11 @@ title: "Text2Scene: Generating Compositional Scenes from Textual Descriptions"
 aside:
   toc: true
 sidebar:
-  nav: Text2Image
+  nav: Paper-read
 tags:
   - paper read
   - computer vision
+  - text2image
 date: 2019-05-22
 modify_date: 2019-05-25
 mathjax: true

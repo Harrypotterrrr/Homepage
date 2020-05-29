@@ -4,20 +4,18 @@ title: "Learning where and what to draw"
 aside:
   toc: true
 sidebar:
-  nav: Text2Image
+  nav: Paper-read
 tags:
   - paper read
   - computer vision
+  - text2image
 date: 2019-05-18
 modify_date: 2019-05-18
 mathjax: true
 ---
 
-
-
 The note of [*Learning where and what to draw*](https://arxiv.org/abs/1610.02454)
 <!--more-->
-
 
 ## Overview
 

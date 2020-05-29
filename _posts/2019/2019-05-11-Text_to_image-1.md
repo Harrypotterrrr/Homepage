@@ -4,10 +4,11 @@ title: "Generative Adversarial Text to Image Synthesis"
 aside:
   toc: true
 sidebar:
-  nav: Text2Image
+  nav: Paper-read
 tags:
   - paper read
   - computer vision
+  - text2image
 date: 2019-05-11
 modify_date: 2019-05-19
 mathjax: true

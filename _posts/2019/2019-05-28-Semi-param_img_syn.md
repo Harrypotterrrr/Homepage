@@ -4,10 +4,11 @@ title: "Semi-parametric Image Synthesis"
 aside:
   toc: true
 sidebar:
-  nav: Text2Image
+  nav: Paper-read
 tags:
   - paper read
   - computer vision
+  - text2image
 date: 2019-05-28
 modify_date: 2019-05-29
 mathjax: true
