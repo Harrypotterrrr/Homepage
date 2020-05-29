@@ -1,0 +1,7 @@
+{%- include snippets/get-nav-url.html path=include.url -%}
+{%- assign _nav_url = __return -%}
+{%- if _nav_url == include.page_url -%}
+    <li class="{{ include.toc_level }} active"><a href="{{ _nav_url }}">{{ include.title }}</a></li>
+{%- else -%}
+    <li class="{{ include.toc_level }}"><a href="{{ _nav_url }}">{{ include.title }}</a></li>
+{%- endif -%}
