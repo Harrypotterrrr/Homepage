@@ -1,6 +1,8 @@
 ---
 layout: article
 title: "Vim cookbook"
+sidebar:
+  nav: Cookbook
 aside:
   toc: true
 tags:

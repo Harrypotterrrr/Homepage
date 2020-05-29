@@ -1,6 +1,8 @@
 ---
 layout: article
 title: "Linux cookbook"
+sidebar:
+  nav: Cookbook
 aside:
   toc: true
 tags:

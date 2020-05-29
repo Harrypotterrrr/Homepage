@@ -1,6 +1,8 @@
 ---
 layout: article
 title: "Tmux tutorial"
+sidebar:
+  nav: Cookbook
 aside:
   toc: true
 tags:

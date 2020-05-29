@@ -1,6 +1,8 @@
 ---
 layout: article
 title: "Git cookbook"
+sidebar:
+  nav: Cookbook
 aside:
   toc: true
 tags:

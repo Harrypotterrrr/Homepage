@@ -48,3 +48,16 @@ header:
       fr-LU   : *FR
       # @end locale config
     url: /about.html
+
+Cookbook:
+  - title:      Cookbook
+    url:        /archive.html?tag=cookbook
+    children:
+      - title:  Linux-cookbook
+        url:    /2019/02/06/Linux-cookbook
+      - title:  Git-cookbook
+        url:    /2019/02/10/Git-cookbook
+      - title:  Tmux-cookbook
+        url:    /2019/06/20/Tmux-cookbook
+      - title:  Vim-cookbook
+        url:    /2019/08/03/Vim-cookbook
