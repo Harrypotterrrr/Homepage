@@ -1,5 +1,10 @@
 header:
   - titles:
+      en      : &EN       Blog
+      zh-Hans : &ZH_HANS  博客
+    url: /blog
+
+  - titles:
       # @start locale config
       en      : &EN       Archive
       en-GB   : *EN
@@ -22,7 +27,7 @@ header:
       fr-FR   : *FR
       fr-LU   : *FR
       # @end locale config
-    url: /archive.html
+    url: /archive
 
   - titles:
       # @start locale config
@@ -47,7 +52,7 @@ header:
       fr-FR   : *FR
       fr-LU   : *FR
       # @end locale config
-    url: /about.html
+    url: /about
 
 Cookbook:
   - title:      Cookbook
