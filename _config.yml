@@ -212,7 +212,7 @@ defaults:
 ## => Collections
 ##############################
 collections:
-  sample_page:
+  experience:
     output: true
 
 ## => Plugins
