@@ -62,6 +62,7 @@ $base: (
 
   spacer:                 1rem,
 
+  border-radius-xl:       1rem,
   border-radius-lg:       .8rem,
   border-radius:          .4rem,
   border-radius-sm:       .2rem
@@ -142,6 +143,8 @@ $button: (
 );
 
 $image: (
+  width-home-width:  18em,
+  width-home-height:  14em,
   width-xl:  20em,
   width-lg:  16rem,
   width:     12rem,
