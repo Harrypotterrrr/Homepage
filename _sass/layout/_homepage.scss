@@ -1,0 +1,58 @@
+.layout--homepage {
+    .heros {
+      max-width: map-get($layout, content-max-width) * 2;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .hero {
+      img {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+    .hero__content {
+      margin-bottom: 0;
+    }
+    .hero__cover {
+      max-width: map-get($layout, content-max-width);
+    }
+    .hero__cover--full-width {
+      max-width: none;
+    }
+    .hero__title {
+        margin-top: auto;
+    }
+
+    .article-list{
+        .item{
+            border-bottom-width: 0;
+        }
+
+        .item__content{
+            .item__title {
+                font-size: 1.3rem;
+                font-family: 'Baloo Tamma 2', cursive;
+                color: #3377CC;
+            }
+        }
+    }
+
+
+    // experience 宽度
+    .layout--experience{
+        width: 60%;
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image--experience{
+        margin-right: map-get($spacers, 5);
+        border-radius: 12%;
+        width: map-get($image, width-home-width);
+        height: map-get($image, width-home-height);
+    }
+}
+
+
