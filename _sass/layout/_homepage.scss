@@ -24,30 +24,45 @@
         margin-top: auto;
     }
 
-    .article-list{
+    .article-list {
         .item{
             border-bottom-width: 0;
         }
 
-        .item__content{
-            .item__title {
-                font-size: 1.3rem;
-                font-family: 'Baloo Tamma 2', cursive;
-                color: #3377CC;
+        .item__content {
+            .item__head {
+                .item__title {
+                    margin: 0.1rem;
+                    font-size: 1.4rem;
+                    font-family: 'Baloo Tamma 2', cursive;
+                    color: #3377CC;
+                }
+                .item__subtitle {
+                    color: #5e9516;
+                    font-size: 1.1rem;
+                    font-family: 'PT Sans', sans-serif;
+                }
+                .item__location {
+                    color: #494949;
+                    font-size: 1.1rem;
+                    font-family: 'Satisfy', cursive;
+                }
+                margin-bottom: 0.3rem;
             }
+            
         }
     }
 
 
     // experience 宽度
-    .layout--experience{
+    .layout--experience {
         width: 60%;
         max-width: 60%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .image--experience{
+    .image--experience {
         margin-right: map-get($spacers, 5);
         border-radius: 12%;
         width: map-get($image, width-home-width);
