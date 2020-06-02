@@ -3,11 +3,11 @@ layout: home_landing
 key: articles-item-cover-excerpt-readmore-info
 cover: /docs/assets/images/axure/articles-item-cover-excerpt-readmore-info.jpg
 experience:
-  title: —————— Here's what I have done so far ——————
+  title: Here's what I have done so far
   data_source: site.experience
   show_excerpt: true
-  show_readmore: true
-  show_info: true
+  show_info: false
+  show_readmore: false
 
 title: Haolin Jia
 excerpt: >
@@ -30,109 +30,15 @@ article_header:
       url: https://twitter.com/Harrypotterrrr7
     - text: <i class="fab fa-linkedin-in"></i>
       url: https://www.linkedin.com/in/haolin-jia-7b4b49173/
-  height: 80vh
+  height: 100vh
   theme: dark
-  background_color: "#367a9a"
+  background_color.bak: "#367a9a"
   background_image:
-    gradient: "linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .6))"
-    src: /docs/assets/images/cover4.jpg
+    gradient.bak: "linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .6))"
+    src: /assets/images/homepage/header.jpeg
 
-data:
-  sections:
-      
-    - title: —————— Here's what I have done so far ——————
-      image:
-        src: /docs/screenshots/TeXt-layouts.png
-        is_row: true
-        full_width: true
-        style: "max-width: 1200px;"
-
-    - title: Fully Responsive
-      excerpt: This theme will look great on any device, no matter the size!
-      theme: dark
-      image:
-        src: /docs/screenshots/TeXt-responsive.png
-      background_color: "#515151"
-
-
-    - title: Skins
-      excerpt: TeXt has 6 built-in skins, you can also set up your own skin.
-      image:
-        src: /docs/screenshots/TeXt-skins.png
-        is_row: true
-        full_width: true
-        style: "max-width: 1000px;"
-
-    - title: Enhanced User Experience
-      children:
-        - title: Additional Styles
-          excerpt: TeXt offer some CSS classes for your page, including alert, tag, image, button, etc.
-          actions:
-            - text: Learn More
-              url: /docs/en/additional-styles
-        - title: Extensions
-          excerpt: Adding audios, videos, slides and demos to your page.
-          actions:
-            - text: Learn More
-              url: /docs/en/extensions
-        - title: Markdown Enhancements
-          excerpt: Using Mathjax, Mermaid and Charts in your page.
-          actions:
-            - text: Learn More
-              url: /docs/en/markdown-enhancements
-
-    - title: 100% Free
-      theme: dark
-      excerpt: Free to use however you want under the MIT License. Clone it, fork it, customize it, whatever!
-      actions:
-        - text: '<i class="fab fa-github"></i> GitHub'
-          type: outline-theme-dark
-          url: https://github.com/kitian616/jekyll-TeXt-theme
-      background_color: "#515151"
-
-    - title: Tip Me
-      children:
-        - title: 'PayPal <i class="fas fa-arrow-down"></i>'
-          image:
-            src: /docs/assets/images/tip_paypal.jpg
-            url: https://www.paypal.me/kitian616
-            style: "max-width: 200px; max-height: 200px"
-            is_row: true
-        - title: 'WeChat <i class="fas fa-arrow-down"></i>'
-          image:
-            src: /docs/assets/images/tip_wechat.jpg
-            style: "max-width: 200px; max-height: 200px"
-            is_row: true
-        - title: 'Alipay <i class="fas fa-arrow-down"></i>'
-          image:
-            src: /docs/assets/images/tip_alipay.jpg
-            style: "max-width: 200px; max-height: 200px"
-            is_row: true
-        - title: 'Bitcoin <i class="fas fa-arrow-down"></i>'
-          image:
-            src: /docs/assets/images/3Fkufxcw2xd8HnaRJBNK4ccdtkUDyyNu4V.jpg
-            style: "max-width: 200px; max-height: 200px"
-          content: '<code style="font-size: .65rem; word-break: break-all">3Fkufxcw2xd8HnaRJBNK4ccdtkUDyyNu4V</code>'
 ---
 
 <div class="article__content" markdown="1">
-
----
-
-Article list with cover, excerpt, read more link and info.
-
-<!--more-->
-
-**front matter:**
-
-    ---
-    layout: articles
-    title: Articles - Item (Cover + Excerpt + Read More + Info)
-    articles:
-      data_source: site.experience
-      show_excerpt: true
-      show_readmore: true
-      show_info: true
-    ---
 
 </div>
