@@ -21,7 +21,30 @@
       max-width: none;
     }
     .hero__title {
+
+        strong{
+            position: relative;
+        }
+
+        strong::before, strong::after {
+            content: " ";
+            position: absolute;
+            top: 50%;
+            height: 2px;
+            width: 40%;
+            margin: 0 10px;
+            display: inline-block;
+            background: #333;
+        }
+        strong:before{
+            right: 100%;
+        }
+        strong:after{
+            left: 100%;
+        }
+
         margin-top: auto;
+        font-family: 'Merienda', cursive;
     }
 
     .article-list {
@@ -36,6 +59,11 @@
                     font-size: 1.4rem;
                     font-family: 'Baloo Tamma 2', cursive;
                     color: #3377CC;
+
+                }
+                .item__title:hover {
+                    text-decoration: underline;
+                    color: #2255AA;
                 }
                 .item__subtitle {
                     color: #5e9516;
@@ -49,7 +77,7 @@
                 }
                 margin-bottom: 0.3rem;
             }
-            
+
         }
     }
 
