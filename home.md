@@ -35,7 +35,7 @@ article_header:
   background_color.bak: "#367a9a"
   background_image:
     gradient.bak: "linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .6))"
-    src: /assets/images/homepage/header.jpeg
+    src: https://s1.ax1x.com/2020/08/26/d2wVjx.jpg
 
 ---
 
