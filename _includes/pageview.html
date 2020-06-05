@@ -1,8 +1,8 @@
-{%- include snippets/assign.html target=site.data.variables.default.pageview source0=page.pageview -%}
+{%- include snippets/assign.html target=site.data.variables.default.pageview source0=layout.pageview source1=page.pageview -%}
 {%- assign _pageview = __return -%}
 
 
-{%- if page.layout == "home" -%}
+{%- if page.layout == "home" or page.layout == "home_page" -%}
 
   {%- if jekyll.environment != "development" -%}
     {%- if site.pageview.provider == 'leancloud' -%}

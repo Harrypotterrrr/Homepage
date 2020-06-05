@@ -7,6 +7,7 @@ aside:
   toc: true
 tags:
   - cookbook
+key:  blog-2019-06-20-Tmux-cookbook
 date: 2019-06-20
 modify_date: 2019-06-20
 ---

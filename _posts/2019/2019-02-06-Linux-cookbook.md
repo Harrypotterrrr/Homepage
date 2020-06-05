@@ -7,6 +7,7 @@ aside:
   toc: true
 tags:
   - cookbook
+key: blog-2019-02-05-Linux-cookbook
 date: 2019-02-06
 modify_date: 2019-09-06
 ---

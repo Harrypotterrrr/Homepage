@@ -7,6 +7,7 @@ aside:
   toc: true
 tags:
   - cookbook
+key: blog-2019-08-03-Vim-cookbook
 date: 2019-08-03
 modify_date: 2019-09-13
 ---

@@ -9,6 +9,7 @@ tags:
   - paper read
   - computer vision
   - text2image
+key:  blog-2019-05-22-Text_to_scene
 date: 2019-05-22
 modify_date: 2019-05-25
 mathjax: true

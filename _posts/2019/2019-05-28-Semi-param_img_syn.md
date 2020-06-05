@@ -9,6 +9,7 @@ tags:
   - paper read
   - computer vision
   - text2image
+key:  blog-2019-05-28-Semi-param
 date: 2019-05-28
 modify_date: 2019-05-29
 mathjax: true
