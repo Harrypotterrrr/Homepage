@@ -21,15 +21,15 @@ article_header:
       url: /blog/
   homepage_buttons:
     - text: <i class="fas fa-envelope"></i>
-      url: jiahaolin19971119@gmail.com
+      url: mailto:jiahaolin19971119@gmail.com
     - text: <i class="fab fa-github"></i>
-      url: https://github.com/Harrypotterrrr
+      url: //github.com/Harrypotterrrr
     - text: <i class="fab fa-facebook-f"></i>
-      url: https://www.facebook.com/profile.php?id=100012241788050
+      url: //www.facebook.com/profile.php?id=100012241788050
     - text: <i class="fab fa-twitter"></i>
-      url: https://twitter.com/Harrypotterrrr7
+      url: //twitter.com/Harrypotterrrr7
     - text: <i class="fab fa-linkedin-in"></i>
-      url: https://www.linkedin.com/in/haolin-jia-7b4b49173/
+      url: //www.linkedin.com/in/haolin-jia-7b4b49173/
   height: 100vh
   theme: dark
   background_color.bak: "#367a9a"
