@@ -9,7 +9,7 @@ tags:
   - cookbook
 key: blog-2020-04-01-Port-forward
 date: 2020-04-01
-modify_date: 2020-04-01
+modify_date: 2020-07-15
 ---
 
 Given a internal server without public IP, this cookbook aims to instruct how to use port forward techniques to access resources of it with the help of the outside server with public IP.
@@ -138,6 +138,9 @@ Specify a new port `<listen_port>` to listen the state of the ssh connection and
 ``` shell
 autossh -M <listen_port> -NfR <remote_port>:localhost:<inner_port> publicServer@xx.xx.xx.xx
 ```
+
+**warning:** The `-f` flag of `autossh` is different with the one in `ssh`, which means `autossh` will run in the background without a chance to input password. Thus, it is preferable to append `id_rsa.pub` of `InnerServer` to `authorized_keys` of `publicServer` before using `autossh -f`
+{:.warning}
 
 ### More extention
 
