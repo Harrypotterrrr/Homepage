@@ -1,6 +1,5 @@
 .layout--homepage {
     .heros {
-      max-width: map-get($layout, content-max-width) * 2;
       margin-right: auto;
       margin-left: auto;
     }
@@ -10,9 +9,14 @@
         width: 100%;
         margin: 0 auto;
       }
+      margin: 0;
+      margin-top: 3em;
     }
     .hero__content {
       margin-bottom: 0;
+        p {
+            font-family: 'Architects Daughter', cursive;
+        }
     }
     .hero__cover {
       max-width: map-get($layout, content-max-width);
@@ -42,9 +46,15 @@
         strong:after{
             left: 100%;
         }
-
+        font-size: 1.8em; 
         margin-top: auto;
         font-family: 'Merienda', cursive;
+    }
+
+    .hero--dark .hero__title {
+        strong::before, strong::after {
+            background: $text-color-theme-dark;
+        }
     }
 
     .article-list {
@@ -82,10 +92,11 @@
     }
 
 
-    // experience 宽度
+    // experience
     .layout--experience {
         width: 60%;
         max-width: 60%;
+        margin-top: 3em;
         margin-left: auto;
         margin-right: auto;
     }

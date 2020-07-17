@@ -10,16 +10,13 @@ article_header:
 ---
 <!-- experience.title font -->
 <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 
 <div class="layout--homepage">
 
 <section class="hero__title hero--center">
     <div class="hero__content">
-        <div class="mb-5">
-            <h3>
-                <strong>{{ page.experience.title }}</strong>
-            </h3>
-        </div>
+        <strong>{{ page.experience.title }}</strong>
     </div>
 </section>
 
@@ -95,9 +92,13 @@ article_header:
     {%- endif -%}
 
         <div class="hero__content">
+
+          <section class="hero__title hero--center">
+            <strong>{{  _section.title }}</strong>
+          </section>
+
           <div class="mb-5">
 
-            <h3>{{ _section.title }}</h3>
               {%- if _section.excerpt-%}
             <p>{{ _section.excerpt }}</p>
             {%- endif -%}
