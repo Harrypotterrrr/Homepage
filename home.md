@@ -37,8 +37,23 @@ article_header:
     gradient.bak: "linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .6))"
     src: https://s1.ax1x.com/2020/08/26/d2wVjx.jpg
 
+
+data:
+  sections:
+      
+    - title: Here's what I am interested in and focusing on
+      background_image:
+        src: https://s1.ax1x.com/2020/08/29/d77Xod.jpg
+      theme: dark
+      excerpt: "
+        Computer Graphics<br>
+        Computer Vision<br>
+        Data Analysis<br>
+        Data Mining<br>
+        Front-end Technology<br>
+      "
+
 ---
 
 <div class="article__content" markdown="1">
-
 </div>
