@@ -109,4 +109,18 @@
     }
 }
 
+.article__header--overlay {
+    .home_article__header {
+        @extend .article__header;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 4.5rem;
+        letter-spacing: 0.1em;
+      }
+    .home_overlay__excerpt {
+        @extend .overlay__excerpt;
+        font-family: 'Architects Daughter', cursive;
+    }
+}
+
+
 
