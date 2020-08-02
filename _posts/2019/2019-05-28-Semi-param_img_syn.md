@@ -16,7 +16,7 @@ mathjax: true
 ---
 
 
-The note of [*Semi-parametric Image Synthesis*](https://arxiv.org/abs/1804.10992v1)
+The notes of [*Semi-parametric Image Synthesis*](https://arxiv.org/abs/1804.10992v1)
 
 <!--more-->
 

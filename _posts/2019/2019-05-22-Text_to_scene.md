@@ -16,7 +16,7 @@ mathjax: true
 ---
 
 
-The note of [*Text2Scene: Generating Compositional Scenes from Textual Descriptions*](https://arxiv.org/pdf/1809.01110)
+The notes of [*Text2Scene: Generating Compositional Scenes from Textual Descriptions*](https://arxiv.org/pdf/1809.01110)
 
 <!--more-->
 

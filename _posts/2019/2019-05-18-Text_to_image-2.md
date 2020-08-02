@@ -15,7 +15,7 @@ modify_date: 2019-05-18
 mathjax: true
 ---
 
-The note of [*Learning where and what to draw*](https://arxiv.org/abs/1610.02454)
+The notes of [*Learning where and what to draw*](https://arxiv.org/abs/1610.02454)
 <!--more-->
 
 ## Overview
@@ -33,7 +33,7 @@ Spatial Transformer Networks (STN) is an effective visual attention mechanism
 
 ## Network structure
 
-**GAN** and **Joint embedding structure** used in this model is articulated in the note of [Generative Adversarial Text to Image Synthesis](/posts/2019/05/text_to_image_1/)
+**GAN** and **Joint embedding structure** used in this model is articulated in the notes of [Generative Adversarial Text to Image Synthesis](/posts/2019/05/text_to_image_1/)
 
 
 ### Bounding-box conditional model

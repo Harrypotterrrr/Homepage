@@ -15,7 +15,7 @@ modify_date: 2019-05-19
 mathjax: true
 ---
 
-The note of [*Generative Adversarial Text to Image Synthesis*](https://arxiv.org/abs/1605.05396)
+The notes of [*Generative Adversarial Text to Image Synthesis*](https://arxiv.org/abs/1605.05396)
 
 <!--more-->
 

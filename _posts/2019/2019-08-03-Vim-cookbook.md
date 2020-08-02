@@ -154,7 +154,7 @@ add `set tabstop=4`
 {:.info}
 
 **Mention:** all of these commands is will 'cut' the text to the clipboard, so the following `p` will works!
-{: .notice--warning}
+{:.warning}
 
 ### Delete and insert
 
@@ -207,8 +207,8 @@ add `set tabstop=4`
 
 - `t<char>` jump before the next occurrence of `<char>`
 
-**e.g. delete until specified char:** `dt"` delete text until `"`
-{: .notice--success}
+**e.g.** delete until specified char: `dt"` delete text until `"`
+{:.success}
 
 ### Global searching
 
@@ -240,15 +240,15 @@ add `set tabstop=4`
 
 - `v` switch to visual mode
 
-**e.g. delete the whole word:** `v` for visual mode, `e` jump to the end of the current word, `d` to delete
-{: .notice--success}
+**delete the whole word:** `v` for visual mode, `e` jump to the end of the current word, `d` to delete
+{: .success}
 
 ### Visual block mode
 
 - `ctrl + v` switch to visual block mode
 
-**e.g. Comment quickly:** `ctrl + v` for block mode, select some lines, `I` to insect at the beginning of each line, input the annotation symbol, `Esc` twice finally comment several lines quickly
-{: .notice--success}
+**Comment quickly:** `ctrl + v` for block mode, select some lines, `I` to insect at the beginning of each line, input the annotation symbol, `Esc` twice finally comment several lines quickly
+{: .success}
 
 - `:10,20s#^#//#g` comment `//` from line 10 to line 20
 
