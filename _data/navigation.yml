@@ -88,3 +88,27 @@ Paper-read:
 
   - title:      Video
     url:        /archive.html?tag=video
+
+Poker:
+  - title:      Poker
+    url:        /archive.html?tag=poker
+    children:
+      - title:  Littel Green Book Chapter 1
+        url:    /2020/07/28/green-book-1
+      - title:  Littel Green Book Chapter 2
+        url:    /2020/07/29/green-book-2
+
+"Computer Graphics":
+  - title:      "Computer Graphics"
+    url:        "/archive.html?tag=computer graphics"
+    children:
+      - title:  Overview
+        url:    /2020/08/10/cg-1
+      - title:  Linear algebra
+        url:    /2020/08/11/cg-2
+      - title:  Transformation
+        url:    /2020/08/15/cg-3
+      - title:  Rasterization
+        url:    /2020/08/19/cg-4
+      - title:  Shading
+        url:    /2020/09/02/cg-5
