@@ -152,6 +152,43 @@ Upstart: /etc/init/autossh.conf
 systemd: /usr/lib/systemd/system/autossh.service
 ```
 
+### Startup script example
+
+Here is an example of a `xxx.service` file as Ubuntu startup script under `/etc/systemd/systme/`:
+
+```
+[Unit]
+Description=Port forward
+After=network.target syslog.target
+Wants=network.target default.target
+
+[Service]
+Type=forking
+User=lz
+Group=lz
+ExecStart=/bin/bash /home/lz/potter/scripts/portf.sh
+ExecReload=/bin/pkill autossh && /home/lz/potter/scripts/portf.sh
+ExecStop=/bin/pkill autossh
+
+[Install]
+WantedBy=default.target
+```
+
+`portf.sh` script is to describe which port to forward under specified path:
+
+```
+autossh -M 9230 -NfR 9220:localhost:22 root@106.13.58.57
+autossh -M 8895 -NfR 8894:localhost:8894 root@106.13.58.57
+```
+
+then refresh the system daemon and start your service:
+
+``` bash
+sudo systemctl daemon-reload
+systemctl start xxx.service
+```
+
+
 ## FAQ
 
 ### SSH Permission Denied
