@@ -88,6 +88,7 @@
             }
             .item__description {
                 .article__content {
+                    text-align:justify;
                     font-size: 1.1rem;
                 }
             }
@@ -122,6 +123,7 @@
     .home_overlay__excerpt {
         @extend .overlay__excerpt;
         font-family: 'Architects Daughter', cursive;
+        text-align: center;
     }
 }
 
