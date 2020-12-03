@@ -177,8 +177,8 @@ WantedBy=default.target
 `portf.sh` script is to describe which port to forward under specified path:
 
 ```
-autossh -M 9230 -NfR 9220:localhost:22 root@106.13.58.57
-autossh -M 8895 -NfR 8894:localhost:8894 root@106.13.58.57
+autossh -M 9230 -NfR 9220:localhost:22 root@xx.xx.xx.xx
+autossh -M 8895 -NfR 8894:localhost:8894 root@xx.xx.xx.xx
 ```
 
 then refresh the system daemon and start your service:
