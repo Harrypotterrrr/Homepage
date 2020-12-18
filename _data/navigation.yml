@@ -104,7 +104,7 @@ Poker:
     children:
       - title:  Overview
         url:    /2020/08/10/cg-1
-      - title:  Linear algebra
+      - title:  Linear Algebra
         url:    /2020/08/11/cg-2
       - title:  Transformation
         url:    /2020/08/15/cg-3
@@ -116,3 +116,7 @@ Poker:
         url:    /2020/09/07/cg-6
       - title:  Geometry
         url:    /2020/11/19/cg-7
+      - title:  Ray Tracing
+        url:    /2020/11/25/cg-8
+      - title:  Advanced Ray Tracing
+        url:    /2020/12/03/cg-9
