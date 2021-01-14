@@ -66,6 +66,7 @@
         .item__content {
             .item__head {
                 .item__title {
+                    margin: 0.1rem;
                     font-size: 1.5rem;
                     font-family: 'Baloo Tamma 2', cursive;
                     color: #3377CC;
@@ -99,8 +100,8 @@
 
     // experience
     .layout--experience {
-        width: 60%;
-        max-width: 60%;
+        // width: 50%;
+        max-width: 50%;
         margin-top: 3em;
         margin-left: auto;
         margin-right: auto;
