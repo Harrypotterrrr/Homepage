@@ -14,9 +14,10 @@
     }
     .hero__content {
       margin-bottom: 0;
-        p {
+        .mb-5 p{
             font-family: 'Architects Daughter', cursive;
             text-align: center;
+            font-size: 1.3rem;
         }
     }
     .hero__cover {
@@ -47,7 +48,7 @@
         strong:after{
             left: 100%;
         }
-        font-size: 1.8em; 
+        font-size: 1.5em; 
         margin-top: auto;
         font-family: 'Merienda', cursive;
     }
@@ -82,7 +83,7 @@
                     font-family: 'PT Sans', sans-serif;
                 }
                 .item__location {
-                    color: #494949;
+                    color: #3f3f3f;
                     font-size: 1.1rem;
                     font-family: 'Satisfy', cursive;
                 }
@@ -92,6 +93,7 @@
                 .article__content {
                     text-align:justify;
                     font-size: 1.0rem;
+                    color:#636a74;
                 }
             }
         }
@@ -127,6 +129,10 @@
         font-family: 'Architects Daughter', cursive;
         text-align: center;
     }
+    .hero__content {
+        margin: 0rem auto 3rem;
+    }
+    position: relative;
 }
 
 
