@@ -43,3 +43,55 @@ comment: false
         </div>
     </div>
 </div>
+
+## Education
+
+<div class="box">
+    <ul id="first-list">
+        <li>
+            <span></span>
+            <div class="title">New York University</div>
+            <div class="info">MS in Computer Science</div>
+            <div class="name">- New York, NY, U.S. -</div>
+            <div class="time">
+                <span>present</span>
+                <span>Sep 2020</span>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <div class="title">University of California, Merced</div>
+            <div class="info">Research Intern supervised by Prof. Ming-Hsuan Yang</div>
+            <div class="name">- Merced, CA, U.S. -</div>
+            <div class="time">
+                <span>Feb 2020</span>
+                <span>Jul 2019</span>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <div class="title">Tongji University</div>
+            <div class="info">BA in Computer Science GPA: 91.4/100</div>
+            <div class="name">- Shanghai, China -</div>
+            <div class="time">
+                <span>Jul 2020</span>
+                <span>Sep 2016</span>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <div class="title">The Experimental High School Attached To Beijing Normal University</div>
+            <div class="info">Senior high school in Class One instructed by Jinnan Yuan</div>
+            <div class="name">- Beijing, China -</div>
+            <div class="time">
+                <span>Jul 2016</span>
+                <span>Sep 2013</span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+<!-- <iframe src="https://drive.google.com/file/d/1hhmqyf-4bAKm3hIHycszZIMoCnyN2_eK/preview" width="100%" height="1000"></iframe> -->
+
+<!-- <iframe src="http://docs.google.com/gview?url=https://drive.google.com/file/d/1hhmqyf-4bAKm3hIHycszZIMoCnyN2_eK/view?usp=sharing&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe> -->
