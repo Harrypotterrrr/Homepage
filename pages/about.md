@@ -3,12 +3,12 @@ layout: article
 permalink: /about
 titles:
   # @start locale config
-  en      : &EN       About
+  en      : &EN       About Me
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
   en-AU   : *EN
-  zh-Hans : &ZH_HANS  关于
+  zh-Hans : &ZH_HANS  关于我
   zh      : *ZH_HANS
   zh-CN   : *ZH_HANS
   zh-SG   : *ZH_HANS
@@ -25,31 +25,21 @@ titles:
   fr-LU   : *FR
   # @end locale config
 key: page-about
+comment: false
 ---
 
-![TeXt Theme](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/TeXt-home.jpg)
-
-TeXt is a super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc. Similar to iOS 11 style, it has large and prominent titles, round buttons and cards.
-
-```javascript
-(() => console.log('Hello, World!'))();
-```
-
-## Features
-
-- Responsive
-- Semantic HTML
-- Skins
-- Highlight Theme
-- Internationalization
-- Search
-- Table of contents
-- Authors
-- Additional styles (alert, tag, image, icon, button, grid, etc)
-- Extensions (audios, videos, slides, demos)
-- Markdown enhancements ([MathJax](https://www.mathjax.org/), [mermaid](https://mermaidjs.github.io/), [chartjs](http://www.chartjs.org/))
-- Sharing ([AddToAny](https://www.addtoany.com/), [AddThis](https://www.addthis.com/))
-- Comments ([Disqus](https://disqus.com/), [Gitalk](https://gitalk.github.io/), [Valine](https://valine.js.org/en/))
-- Pageview ([LeanCloud](https://leancloud.cn/))
-- Analytics ([Google Analytics](https://analytics.google.com/analytics/web/))
-- RSS ([jekyll-feed](https://github.com/jekyll/jekyll-feed))
+<div class="item">
+    <div class="item__image">
+        <img class="image image--lg" src="https://z3.ax1x.com/2021/05/29/2AZNhn.jpg"/>
+    </div>
+    <div class="item__content">
+        <div class="item__header">
+            <h2>Haolin Jia</h2>
+        </div>
+        <div class="item__description">
+            <p>
+                I am a master student at Courant Institute of Mathematical Sciences, New York University, majoring in computer science. I got my Bachelor's Degree of Computer Science and Technology from Tongji University in July 2020.I have been working with <a href="http://cs.nyu.edu/~panozzo/">Prof. Daniele Panozzo</a> on Broad-Phase Detection in the field of geometry modeling. I also did research on video reconstruction and semi-supervised learning with <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">Prof. Ming-Hsuan</a>. Currently, I have great interest in Computer Graphics, Geometry Modeling and relative programming which is being learned by myself. Here is my complete <a href="https://drive.google.com/file/d/1hhmqyf-4bAKm3hIHycszZIMoCnyN2_eK/preview" target="blank">cv</a>.
+            </p>
+        </div>
+    </div>
+</div>
