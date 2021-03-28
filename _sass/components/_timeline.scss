@@ -1,18 +1,11 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color:#ffffff;
-    font-family: arial;
-}
-
-.box{
+.timeline-box{
     margin:0 10%;
     /* height: 630px; */
     overflow: hidden;
     padding: 10px 0 40px 60px;
 }
 
-.box ul{
+.timeline-box ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -21,20 +14,21 @@ body{
     top:0;
 }
 
-/* .box ul:last-of-type{top:80px} */
+/* .timeline-box ul:last-of-type{top:80px} */
 
-.box ul:before{
+.timeline-box ul:before{
     content: "";
     display: block;
     width: 0;
     height: 100%;
-    border:1px dashed rgb(107, 107, 107);
+    border:1px dashed;
+    border-color: $timeline-dash;
     position: absolute;
     top:0;
     left:30px;
 }
 
-.box ul li{
+.timeline-box ul li{
     margin: 20px 60px 45px 60px;
     position: relative;
     padding: 10px 20px;
@@ -46,33 +40,35 @@ body{
 }
 
 
-.box ul li > span{
+.timeline-box ul li > span{
     content: "";
     display: block;
     width: 0;
     height: 100%;
-    border:1px solid rgb(82, 82, 82);
+    border:1px solid;
+    border-color: $timeline-line;
     position: absolute;
     top:0;
     left:-30px;
 }
 
-.box ul li > span:before,.box ul li > span:after{
+.timeline-box ul li > span:before,.timeline-box ul li > span:after{
     content: "";
     display: block;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background:#555555;
-    border:2px solid #fff;
+    background: $timeline-before_after;
+    border:2px solid;
+    border-color: #fff;
     position: absolute;
     left:-5px;
 }
 
-.box ul li > span:before{top: -5%;}
-.box ul li > span:after{top: 95%;}
+.timeline-box ul li > span:before{top: -5%;}
+.timeline-box ul li > span:after{top: 95%;}
 
-.box .title{
+.timeline-box .title{
     text-transform: uppercase;
     // :first-letter{
     //     text-transform: capitalize;
@@ -82,16 +78,16 @@ body{
     font-size: map-get($base, font-size);
 }
 
-.box .info {
+.timeline-box .info {
     font-size: map-get($base, font-size-sm);
-    :first-letter{
-        text-transform: capitalize;
-        line-height: 1.7;
-    }
+}
+.box .info:first-letter{
+    text-transform: capitalize;
+    line-height: 1.7;
 }
 
 
-.box .name{
+.timeline-box .name{
     margin-top: 10px;
     text-transform: capitalize;
     font-style: italic;
@@ -101,7 +97,7 @@ body{
 }
 
 
-.box .time span{
+.timeline-box .time span{
     position: absolute;
     right: 110%;
     color: #474747;
@@ -110,8 +106,8 @@ body{
     width: 30%;
     text-align: right;
 }
-.box .time span:first-child{top:-16px};
-.box .time span:last-child{top:94%};
+.timeline-box .time span:first-child{top:-11%};
+.timeline-box .time span:last-child{top:87%};
 
 
 .arrow{
@@ -130,7 +126,7 @@ body{
             animation: arrow 1s linear infinite;
 }
 
-.box ul:last-of-type .arrow{
+.timeline-box ul:last-of-type .arrow{
     position: absolute;
     top: 105%;
     left: 22%;

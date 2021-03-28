@@ -72,3 +72,13 @@ $npm-color:        #fff;
 
 // highlight colors
 @import "skins/highlight/tomorrow";
+
+// timeline colors
+$timeline-background: rgba(172, 172, 172, 0.3);
+$timeline-before_after: #ff0000;
+$timeline-line: #ff8282;
+$timeline-dash: #ffbaba;
+// $timeline-background: rgba(172, 172, 172, 0.3);
+// $timeline-before_after: #555555;
+// $timeline-line: rgb(82, 82, 82);
+// $timeline-dash: rgb(107, 107, 107);
