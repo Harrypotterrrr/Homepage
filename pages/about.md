@@ -38,15 +38,15 @@ comment: false
         </div>
         <div class="item__description">
             <p>
-                I am a master student at Courant Institute of Mathematical Sciences, New York University, majoring in computer science. I got my Bachelor's Degree of Computer Science and Technology from Tongji University in July 2020.I have been working with <a href="http://cs.nyu.edu/~panozzo/">Prof. Daniele Panozzo</a> on Broad-Phase Detection in the field of geometry modeling. I also did research on video reconstruction and semi-supervised learning with <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">Prof. Ming-Hsuan</a>. Currently, I have great interest in Computer Graphics, Geometry Modeling and relative programming which is being learned by myself. Here is my complete <a href="https://drive.google.com/file/d/1hhmqyf-4bAKm3hIHycszZIMoCnyN2_eK/preview" target="blank">cv</a>.
+                I am a master student at <a href="https://cims.nyu.edu/">Courant Institute of Mathematical Sciences</a>, New York University, majoring in computer science. I got my Bachelor's Degree of Computer Science and Technology from <a href="https://see-en.tongji.edu.cn/">Tongji University</a> in July 2020.I have been working with <a href="http://cs.nyu.edu/~panozzo/">Prof. Daniele Panozzo</a> on Broad-Phase Detection in the field of geometry modeling. I also did research on video reconstruction and semi-supervised learning with <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">Prof. Ming-Hsuan Yang</a>. Currently, I have great interest in Computer Graphics, Geometry Modeling and relative programming which is being learned by myself. Here is my complete <a href="https://drive.google.com/file/d/1hhmqyf-4bAKm3hIHycszZIMoCnyN2_eK/preview" target="blank">cv</a>.
             </p>
         </div>
     </div>
 </div>
 
-## Education
+### Education
 
-<div class="box">
+<div class="timeline-box">
     <ul id="first-list">
         <li>
             <span></span>
@@ -54,7 +54,7 @@ comment: false
             <div class="info">MS in Computer Science</div>
             <div class="name">- New York, NY, U.S. -</div>
             <div class="time">
-                <span>present</span>
+                <span>Present</span>
                 <span>Sep 2020</span>
             </div>
         </li>
