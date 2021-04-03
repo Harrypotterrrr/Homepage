@@ -91,6 +91,50 @@ comment: false
     </ul>
 </div>
 
+### Publication
+
+ <!-- <div class="card">
+    <div class="card__image">
+        <img class="image" src="https://z3.ax1x.com/2021/05/31/2Z4idJ.jpg"/>
+    </div>
+    <div class="card__content">
+        <div class="card__header">
+            <h4>Semi-Supervised Learning with Meta-Gradient</h4>
+        </div>
+        <p>...</p>
+    </div>
+</div> -->
+
+<div class="publication-list">
+    <div class="grid">
+        <div class="cell cell--4">
+            <img src="https://z3.ax1x.com/2021/05/31/2Z4idJ.jpg" />
+        </div>
+        <div class="cell cell--8">
+            <span class="title">
+                Semi-Supervised Learning with Meta-Gradient
+            </span>
+            <br>
+            <a class="author" href="https://github.com/Sakura03">Xinyu Zhang</a>,
+            <a class="author" href="https://prinsphield.github.io/">Tiahong Xiao</a>,
+            <a class="author" href="https://Harrypotterrrr.github.io"><b>Haolin Jia</b></a>,
+            <a class="author" href="https://mmcheng.net/cmm/">Mingming Cheng</a>,
+            <a class="author" href="https://faculty.ucmerced.edu/mhyang/">Ming-Hsuan Yang</a>,
+            <span class="conference">
+            International Conference on Artificial Intelligence and Statistics(AISTATS), 2021
+            </span>
+            <br>
+            [<a class="source" href="https://arxiv.org/abs/2007.03966">Paper</a>,
+            <a class="source" href="https://github.com/Sakura03/SemiMeta">Source code</a>,
+            <a class="source" href="https://github.com/Sakura03/SemiMeta/blob/master/images/aistats-poster.pdf">Poster</a>,
+            <a class="source" href="https://github.com/Sakura03/SemiMeta/blob/master/images/poster-video.mp4">Video</a>,
+            <a class="source" href="https://github.com/Sakura03/SemiMeta/blob/master/images/brief-slides.pdf">Short slides</a>,
+            <a class="source" href="https://github.com/Sakura03/SemiMeta/blob/master/images/full-slides.pdf">Full slides</a>]
+        </div>
+    </div>
+
+</div>
+
 
 <!-- <iframe src="https://drive.google.com/file/d/1hhmqyf-4bAKm3hIHycszZIMoCnyN2_eK/preview" width="100%" height="1000"></iframe> -->
 
