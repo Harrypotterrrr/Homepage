@@ -93,43 +93,70 @@ comment: false
 
 ### Publication
 
- <!-- <div class="card">
-    <div class="card__image">
-        <img class="image" src="https://z3.ax1x.com/2021/05/31/2Z4idJ.jpg"/>
-    </div>
-    <div class="card__content">
-        <div class="card__header">
-            <h4>Semi-Supervised Learning with Meta-Gradient</h4>
-        </div>
-        <p>...</p>
-    </div>
-</div> -->
-
 <div class="publication-list">
     <div class="grid">
         <div class="cell cell--4">
             <img src="https://z3.ax1x.com/2021/05/31/2Z4idJ.jpg" />
         </div>
         <div class="cell cell--8">
-            <span class="title">
+            <div class="title">
                 Semi-Supervised Learning with Meta-Gradient
-            </span>
-            <br>
+            </div>
             <a class="author" href="https://github.com/Sakura03">Xinyu Zhang</a>,
             <a class="author" href="https://prinsphield.github.io/">Tiahong Xiao</a>,
             <a class="author" href="https://Harrypotterrrr.github.io"><b>Haolin Jia</b></a>,
             <a class="author" href="https://mmcheng.net/cmm/">Mingming Cheng</a>,
             <a class="author" href="https://faculty.ucmerced.edu/mhyang/">Ming-Hsuan Yang</a>,
-            <span class="conference">
+            <div class="conference">
             International Conference on Artificial Intelligence and Statistics(AISTATS), 2021
-            </span>
-            <br>
+            </div>
             [<a class="source" href="https://arxiv.org/abs/2007.03966">Paper</a>,
             <a class="source" href="https://github.com/Sakura03/SemiMeta">Source code</a>,
             <a class="source" href="https://github.com/Sakura03/SemiMeta/blob/master/images/aistats-poster.pdf">Poster</a>,
             <a class="source" href="https://github.com/Sakura03/SemiMeta/blob/master/images/poster-video.mp4">Video</a>,
             <a class="source" href="https://github.com/Sakura03/SemiMeta/blob/master/images/brief-slides.pdf">Short slides</a>,
             <a class="source" href="https://github.com/Sakura03/SemiMeta/blob/master/images/full-slides.pdf">Full slides</a>]
+        </div>
+    </div>
+
+</div>
+
+### Project
+
+<div class="project-list">
+    <div class="grid">
+        <div class="cell cell--4">
+            <img src="https://github.com/My-code-works/SmartTab/raw/master/model.png" />
+        </div>
+        <div class="cell cell--8">
+            <div class="title">
+                SmartTab: Sequential Model for Analysing Structure of Articles
+            </div>
+            <div class="brief-intro">
+            Modeled the analysing structures of articles as a Sequence Labeling problem in 2 steps: Paragraph Embedding and Sequence Labeling. Used BERT as a framework of feature extractor to encode paragraphs to gain each sentences embedding. Tagged each paragraph according to its position within the section it belongs to and the relation between it with the neighbor above.
+            </div>
+            <div class="position">
+            Google, Beijing, China, 2019
+            </div>
+            [<a class="source" href="https://github.com/My-code-works">Source code</a>,
+            <a class="source" href="https://drive.google.com/file/d/17WciUpA0c61phd6JMkPzrcKES9jgR5UG/view?usp=sharing">Poster</a>,
+            <a class="source" href="https://drive.google.com/file/d/1N3nnttlhuF3_MV_tAN_vnk8DRsPT3suP/view?usp=sharing">Slide</a>]
+        </div>
+    </div>
+    <div class="grid">
+        <div class="cell cell--4">
+            <img src="https://z3.ax1x.com/2021/05/31/2ekwFJ.jpg" />
+        </div>
+        <div class="cell cell--8">
+            <div class="title">
+                Real-time system of Steam Market Monitor and Database
+            </div>
+            <div class="brief-intro">
+            Building a database by crawling real-time data from the steam trading market. Designing a data analysis algorithm to predict the tendency of the price based on a structured theoretical financial model mixing with Bayesian estimation and even approaches like a temporal sequential network. Maintaining a front-end website to monitor interested goods and items.
+            </div>
+            <div class="position">
+            Beijing, China, 2020
+            </div>
         </div>
     </div>
 

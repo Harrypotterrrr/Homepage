@@ -1,0 +1,73 @@
+.publication-list {
+    font-size: map-get($base, font-size);
+
+    .grid {
+        margin-bottom: 2rem;
+    }
+
+    .cell--4 {
+        img {
+            padding-top: 1.5rem;
+        }
+    }
+
+    .cell--8 {
+        padding-left: 4%;
+    }
+
+    
+    .title {
+        font-weight: bold;
+        font-size: map-get($base, font-size-main);;
+    }
+    .conference {
+        font-style: italic;
+        color: rgb(75, 75, 75);
+    }
+
+    a.author:link, a.author:visited {
+        font-weight: normal;
+        border-bottom: dotted 1pt;
+        color: rgb(82, 0, 0);
+    }
+
+    a.source:link, a.source:visited {
+        font-weight: 600;
+    }
+}
+
+.project-list {
+    font-size: map-get($base, font-size);
+    text-align: justify;
+
+    .grid {
+        margin-bottom: 2rem;
+    }
+    
+    .cell--4 {
+        img {
+            padding-top: 1.5rem;
+        }
+    }
+
+    .cell--8 {
+        padding-left: 4%;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: map-get($base, font-size-main);;
+    }
+    .position {
+        font-style: italic;
+        color: rgb(75, 75, 75);
+    }
+    .brief-intro {
+        color: black;
+        padding-bottom: 0.5%;
+    }
+    a.source:link, a.source:visited {
+        font-weight: 600;
+    }
+
+}
