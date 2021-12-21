@@ -46,11 +46,10 @@ data:
         src: https://s1.ax1x.com/2020/08/29/d77Xod.jpg
       theme: dark
       excerpt: "
-        Computer Graphics<br>
         Computer Vision<br>
-        Data Analysis<br>
-        Data Mining<br>
-        Front-end Technology<br>
+        Computer Graphics<br>
+        Deep Learning<br>
+        Machine Learning<br>
         Texas Hold'em<br>
       "
 
