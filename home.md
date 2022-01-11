@@ -11,7 +11,7 @@ experience:
 
 title: Haolin Jia
 excerpt: >
-  A self motivated graduate student focusing on Computer Graphics and Computer Vision.
+  A self motivated graduate student focusing on Computer Vision and Computer Graphics.
 permalink: /
 
 article_header:
