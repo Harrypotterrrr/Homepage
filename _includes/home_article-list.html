@@ -60,6 +60,12 @@
                     {{ _article.subtitle}}
                 </div>
                 {%- endif -%}
+
+                {%- if _article.timeline -%}
+                <div class="item__timeline">
+                    {{ _article.timeline}}
+                </div>
+                {%- endif -%}
     
                 {%- if _article.location -%}
                 <div class="item__location">
