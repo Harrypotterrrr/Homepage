@@ -11,7 +11,7 @@ experience:
 
 title: Haolin Jia
 excerpt: >
-  A self motivated graduate student focusing on Computer Vision and Computer Graphics.
+  A self motivated research engineer focusing on Computer Vision and Computer Graphics.
 permalink: /
 
 article_header:
@@ -24,12 +24,12 @@ article_header:
       url: mailto:jiahaolin19971119@gmail.com
     - text: <i class="fab fa-github"></i>
       url: //github.com/Harrypotterrrr
+    - text: <i class="fab fa-linkedin-in"></i>
+      url: //www.linkedin.com/in/haolin-jia-7b4b49173/
     - text: <i class="fab fa-facebook-f"></i>
       url: //www.facebook.com/profile.php?id=100012241788050
     - text: <i class="fab fa-twitter"></i>
       url: //twitter.com/Harrypotterrrr7
-    - text: <i class="fab fa-linkedin-in"></i>
-      url: //www.linkedin.com/in/haolin-jia-7b4b49173/
   height: 100vh
   theme: dark
   background_color.bak: "#367a9a"
