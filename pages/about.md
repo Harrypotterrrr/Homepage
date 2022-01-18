@@ -48,6 +48,15 @@ comment: false
     </div>
 </div>
 
+### News
+
+<div class="item__description">
+
+🎉I am beyond thrilled and humbled to share that I will be joining Matthias Grundmann and Tingbo Hou’s team in Google AI as a full-time Research Engineer! 🚀
+<br>
+🚩I will focus on applied research of on-device applications, deep generative models, and real-time animations in Google products, Mediapipe. 🎨
+</div>
+
 ### Experience
 
 <div class="timeline-box">
