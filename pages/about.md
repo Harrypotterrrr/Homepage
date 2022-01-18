@@ -30,7 +30,7 @@ comment: false
 
 <div class="item">
     <div class="item__image">
-        <img class="image image--lg" src="https://z3.ax1x.com/2021/05/29/2AZNhn.jpg"/>
+        <img class="image image--lg" src="https://s1.ax1x.com/2022/04/10/Lkm6AO.jpg"/>
     </div>
     <div class="item__content">
         <div class="item__header">
@@ -38,23 +38,37 @@ comment: false
         </div>
         <div class="item__description">
             <p>
-                I am a master student at <a href="https://cims.nyu.edu/">Courant Institute of Mathematical Sciences</a>, New York University, majoring in computer science. I got my Bachelor's Degree of Computer Science and Technology from <a href="https://see-en.tongji.edu.cn/">Tongji University</a> in July 2020.I have been working with <a href="http://cs.nyu.edu/~panozzo/">Prof. Daniele Panozzo</a> on Broad-Phase Detection in the field of geometry modeling. I also did research on video reconstruction and semi-supervised learning with <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">Prof. Ming-Hsuan Yang</a>. Currently, I have great interest in Computer Graphics, Geometry Modeling and relative programming which is being learned by myself. Here is my complete <a href="https://drive.google.com/file/d/1hhmqyf-4bAKm3hIHycszZIMoCnyN2_eK/preview" target="blank">cv</a>.
+                I will be joining <a href="https://www.linkedin.com/in/matthias-grundmann-b0b0675/">Matthias Grundmann</a> and <a href="https://www.linkedin.com/in/tingbo-hou/">Tingbo Hou</a>'s team in Google AI as a full-time Research Engineer. I will focus on applied research of on-device applications, deep generative models, and real-time animations in Google products, <a href="https://google.github.io/mediapipe/">Mediapipe</a>.
+                <br>
+                I was a master student at <a href="https://cims.nyu.edu/">Courant Institute of Mathematical Sciences</a>, New York University, majoring in computer science. I received my Bachelor's Degree of Computer Science from <a href="https://see-en.tongji.edu.cn/">Tongji University</a>. In the past, I worked with <a href="http://cs.nyu.edu/~panozzo/">Prof. Daniele Panozzo</a> on Broad-Phase Collision Detection, and also did research on video/image reconstruction and generation with <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">Prof. Ming-Hsuan Yang</a>.
+                <br>
+                Here is my complete <a href="https://drive.google.com/file/d/1hhmqyf-4bAKm3hIHycszZIMoCnyN2_eK/preview" target="blank">cv</a>.
             </p>
         </div>
     </div>
 </div>
 
-### Education
+### Experience
 
 <div class="timeline-box">
     <ul id="first-list">
         <li>
             <span></span>
-            <div class="title">New York University</div>
-            <div class="info">MS in Computer Science</div>
-            <div class="name">- New York, NY, U.S. -</div>
+            <div class="title">Google</div>
+            <div class="info">Research Engineer, focusing on applied research of on-device applications, real-time animations in Google products, Mediapipe.</div>
+            <div class="name">- Mountain View, CA, U.S. -</div>
             <div class="time">
                 <span>Present</span>
+                <span>Jun 2022</span>
+            </div>
+        </li>
+        <li>
+            <span></span>
+            <div class="title">New York University</div>
+            <div class="info">MS in Computer Science</div>
+            <div class="name">- New York City, NY, U.S. -</div>
+            <div class="time">
+                <span>Jun 2022</span>
                 <span>Sep 2020</span>
             </div>
         </li>
