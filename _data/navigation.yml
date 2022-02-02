@@ -122,3 +122,12 @@ Poker:
         url:    /2020/12/03/cg-9
       - title:  Material
         url:    /2020/12/20/cg-10
+
+"Generative Model":
+  - title:      "Generative Model"
+    url:        "/archive.html?tag=generative model"
+    children:
+      - title:  Basic Theory Of Generation
+        url:    /2022/01/20/gan-1
+      - title:  Conditional Generative Model
+        url:    /2022/01/25/gan-2
