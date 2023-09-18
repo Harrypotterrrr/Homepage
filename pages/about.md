@@ -30,7 +30,8 @@ comment: false
 
 <div class="item">
     <div class="item__image">
-        <img class="image image--lg" src="https://s1.ax1x.com/2022/04/10/Lkm6AO.jpg"/>
+        <!-- <img class="image image--lg" src="https://s1.ax1x.com/2022/04/10/Lkm6AO.jpg"/> -->
+        <img class="image image--lg" src="https://z1.ax1x.com/2023/09/18/pPhvR9f.png"/>
     </div>
     <div class="item__content">
         <div class="item__header">

@@ -11,7 +11,7 @@ experience:
 
 title: Haolin Jia
 excerpt: >
-  A self motivated research engineer focusing on Computer Vision and Computer Graphics.
+  Persuing the allurement, elegance of the vision and graphics, not only for tech but the life.
 permalink: /
 
 article_header:
