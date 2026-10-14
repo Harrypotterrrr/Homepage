@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata["plugin_type"] = "theme"
 
-  spec.files         = `git ls-files -z`.split("\x0").select do |f|
+  spec.files         = (`git ls-files -z` rescue Dir.glob("**/*").join("\x0")).split("\x0").select do |f|
     f.match(%r{^((_data|_includes|_layouts|_sass|assets)/|(LICENSE|README|CHANGELOG)((\.(txt|md|markdown)|$)))}i)
   end
 

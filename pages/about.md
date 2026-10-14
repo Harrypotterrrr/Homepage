@@ -31,7 +31,7 @@ comment: false
 <div class="item">
     <div class="item__image">
         <!-- <img class="image image--lg" src="https://s1.ax1x.com/2022/04/10/Lkm6AO.jpg"/> -->
-        <img class="image image--lg" src="https://z1.ax1x.com/2023/09/18/pPhvR9f.png"/>
+        <img class="image image--lg" src="/assets/images/avatar/about_avatar.jpg"/>
     </div>
     <div class="item__content">
         <div class="item__header">
@@ -118,6 +118,97 @@ comment: false
 ### Publication
 
 <div class="publication-list">
+    <div class="grid">
+        <div class="cell cell--4">
+            <img src="/assets/images/publications/blazeedit.png" />
+        </div>
+        <div class="cell cell--8">
+            <div class="title">
+                BlazeEdit: Generalist Image Editing on Mobile Devices with Image-to-Image Diffusion Models
+            </div>
+            Fei Deng,
+            Yanwu Xu,
+            Zhipeng Bao,
+            Zhixing Zhang,
+            <a class="author" href="https://Harrypotterrrr.github.io"><b>Haolin Jia</b></a>,
+            Karthik Raveendran,
+            Jianing Wei
+            <div class="conference">
+            IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 2026
+            </div>
+            [<a class="source" href="https://arxiv.org/abs/2605.28067">Paper</a>]
+        </div>
+    </div>
+    <div class="grid">
+        <div class="cell cell--4">
+            <img src="/assets/images/publications/scaling_diffusion.png" />
+        </div>
+        <div class="cell cell--8">
+            <div class="title">
+                Scaling Inference Time Compute for Diffusion Models
+            </div>
+            Nanye Ma,
+            Shangyuan Tong,
+            <a class="author" href="https://Harrypotterrrr.github.io"><b>Haolin Jia</b></a>,
+            Hexiang Hu,
+            Yu-Chuan Su,
+            Mingda Zhang,
+            Xuan Yang,
+            Yandong Li,
+            Tommi Jaakkola,
+            Xuhui Jia,
+            Saining Xie
+            <div class="conference">
+            IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025
+            </div>
+            [<a class="source" href="https://openaccess.thecvf.com/content/CVPR2025/html/Ma_Scaling_Inference_Time_Compute_for_Diffusion_Models_CVPR_2025_paper.html">Paper</a>,
+            <a class="source" href="https://arxiv.org/abs/2501.09732">arXiv</a>]
+        </div>
+    </div>
+    <div class="grid">
+        <div class="cell cell--4">
+            <img src="/assets/images/publications/mobilediffusion.png" />
+        </div>
+        <div class="cell cell--8">
+            <div class="title">
+                MobileDiffusion: Subsecond Text-to-Image Generation on Mobile Devices
+            </div>
+            Yang Zhao,
+            Yanwu Xu,
+            Zhisheng Xiao,
+            <a class="author" href="https://Harrypotterrrr.github.io"><b>Haolin Jia</b></a>,
+            Tingbo Hou
+            <div class="conference">
+            European Conference on Computer Vision (ECCV), 2024
+            </div>
+            [<a class="source" href="https://arxiv.org/abs/2311.16567">Paper</a>,
+            <a class="source" href="https://research.google/blog/mobilediffusion-rapid-text-to-image-generation-on-mobile-devices/">Blog</a>]
+        </div>
+    </div>
+    <div class="grid">
+        <div class="cell cell--4">
+            <img src="/assets/images/publications/blazestylegan.png" />
+        </div>
+        <div class="cell cell--8">
+            <div class="title">
+                BlazeStyleGAN: A Real-Time On-Device StyleGAN
+            </div>
+            <a class="author" href="https://Harrypotterrrr.github.io"><b>Haolin Jia</b></a>,
+            Qifei Wang,
+            Omer Tov,
+            Yang Zhao,
+            Fei Deng,
+            Lu Wang,
+            Chuo-Ling Chang,
+            Tingbo Hou,
+            Matthias Grundmann
+            <div class="conference">
+            IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 2023
+            </div>
+            [<a class="source" href="https://openaccess.thecvf.com/content/CVPR2023W/ECV/html/Jia_BlazeStyleGAN_A_Real-Time_On-Device_StyleGAN_CVPRW_2023_paper.html">Paper</a>,
+            <a class="source" href="https://openaccess.thecvf.com/content/CVPR2023W/ECV/papers/Jia_BlazeStyleGAN_A_Real-Time_On-Device_StyleGAN_CVPRW_2023_paper.pdf">PDF</a>]
+        </div>
+    </div>
     <div class="grid">
         <div class="cell cell--4">
             <img src="https://z3.ax1x.com/2021/05/31/2Z4idJ.jpg" />
